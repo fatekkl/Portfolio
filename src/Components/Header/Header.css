@@ -1,0 +1,32 @@
+
+/*  HEADER */
+
+.header {
+    background-color: #0C356A;
+    border-bottom: solid #0C356A 4px;
+    box-shadow: 
+    inset -50px -50px 50px rgba(255, 255, 255, 0.2),
+    inset 50px 50px 50px rgba(0,0,0,0.1);
+}
+.Navegacao {
+    display: flex;
+    padding-bottom: 20px;
+    gap: 40px;
+    width: 100vw;
+    height: 2.875rem;
+}
+.Navegacao a {
+    margin-left: 5%;
+    margin-top: 2%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+}
+
+.Ellipse {
+    position: relative;
+    height: 3.655rem;
+    left: -20px;
+    top: -20px;
+}

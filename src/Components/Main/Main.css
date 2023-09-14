@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #fff;
+    color: #000;
+    box-sizing: border-box;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+body::-webkit-scrollbar{
+    width: 0px;
+}
+/* LAYOUT PRINCIPAL */
+
+.Layout {   
+    height: 44rem; 
+    width: 100%;
+    background: linear-gradient(transparent , white 102%);
+}
+
+.LayoutTextos {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 26px;
+    margin: 4% 5%;
+}
+
+.LayoutTextos h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+
+}
+
+.Layout span {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
+}
+
+.LayoutTextos p{
+    border-left: #0C356A solid;
+    padding-left: 10px;
+    width: 50%;
+}
+
+.LayoutTextos strong {
+    color: #0C356A;
+}
+
+.LayoutTextos strong:hover {
+    color:#279EFF;
+}
+
+/* LAYOUT PRINCIPAL */
+
+/*     BOTÃO              */
+
+.LinksBotao {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.LinksBotao a {
+    display: flex;
+    width: 20.875rem;
+    height: 1.875rem;
+    color: #000;
+    border: 3px solid #0C356A;
+    border-radius: 22px;
+    align-items: center;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 14px;
+    gap: 6px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    color: #0C356A;
+    box-shadow: inset 0px 0px 15px;
+    transition: all 0.6s ease-in-out 0s;
+}
+
+.LinksBotao a img {
+    width: 2.325rem;
+}
+/*     SETA        */
+
+.SetaIMG {
+    width:  7.565rem;
+    position: absolute;
+    right: 45%;
+    animation: bounce 6s infinite;
+    transform: translateX(-50%);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translateY(100%);
+    }
+}
+
+/*    SETA         */
+
+.LinksBotao a:hover {
+    background-color: #2A2F4F;
+    color: #279EFF;
+    transform: scale(0.9)rotateX(360deg);
+    box-shadow: inset 0px 0px 4px;
+
+}
+
+/*  BOTÃO  */
+
+/*  IMAGEM */
+
+.ImagemAjuste {
+    margin: 12%;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 650px){
+
+
+    .LayoutTextos h1 {
+        text-align: center;
+    }
+
+    .LayoutTextos span {
+        text-align: center;
+    }
+
+    .LayoutTextos p {
+        width: 100%;
+        border: none;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .LinksBotao {
+        align-items: center;
+    }
+}
