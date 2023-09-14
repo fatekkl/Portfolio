@@ -70,23 +70,31 @@
 
 
 @media (max-width: 650px) {
+
+    .Secao2 {
+        display: flex;
+        gap: 20px;
+    }
     .SobreMim {
-       text-align: center;
        display: flex;
-       justify-content: center;
-       flex-direction: column;
        gap: 20px;
        font-size: 1.0rem;
     }
 
+    .SobreMim h1 {
+        font-size: 1.875rem;
+        text-wrap: nowrap;
+    }
+
     .sobre-img  img{
-        width: 20.355rem;
+        width: 12.875rem;
         margin-right: 20px;
         margin-top: 6.045rem;
         gap: 32px;
         border-radius: 45%;
         border: #279EFF solid 3px;
-        justify-content: none;
-    
+        align-items: flex-end;
+        align-self: stretch;
+
     }
 }
