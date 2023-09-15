@@ -16,7 +16,7 @@ const LayoutPrincipal = () => {
             <a  href="https://github.com/fatekkl">
                 <img src="/assets/github.png" alt="ImagemGithub"/> Github
             </a>
-            <a href="https://twitter.com/tohsyyx">
+            <a href="https://www.instagram.com/matheuskdask/">
                 <img src="/assets/instagram.png" alt="ImagemInstagram"/>Instagram
             </a>
         </div>
