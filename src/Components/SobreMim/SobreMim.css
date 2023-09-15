@@ -14,9 +14,7 @@
     display: flex;
     color: #fff;
     margin: 0% 5% 0% 0%;
-    flex-flow: column wrap;
-    gap: 20px;
-    width: 475px;
+    flex-flow: column;
 }
 
 .SobreMim h1 {
@@ -41,17 +39,19 @@
 .SobreMim p {
     font-family: 'Montserrat', sans-serif;
     text-indent: 10px;
-    text-align: center;
-    flex-wrap: wrap;
-    position: relative;
-    top: 0;
-    left: 2rem;
+    justify-content: center;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    width: 40rem;
+}
+
+.sobre-img {
+    margin-top: 6.045rem;
+    margin-right: 2rem;
 }
 
 .sobre-img  img{
     width: 20.355rem;
-    margin-right: 20px;
-    margin-top: 6.045rem;
     border-radius: 45%;
     border: #279EFF solid 3px;
     animation: float 4s infinite;
@@ -69,32 +69,33 @@
 }
 
 
-@media (max-width: 650px) {
+@media (max-width: 1050px) {
 
-    .Secao2 {
-        display: flex;
-        gap: 20px;
-    }
     .SobreMim {
        display: flex;
-       gap: 20px;
-       font-size: 1.0rem;
+
+    }
+    
+    .SobreMim p {
+        font-size: 0.9rem;
+        text-align: center;
     }
 
     .SobreMim h1 {
-        font-size: 1.875rem;
+        font-size: 1.475rem;
         text-wrap: nowrap;
     }
 
-    .sobre-img  img{
-        width: 12.875rem;
-        margin-right: 20px;
-        margin-top: 6.045rem;
-        gap: 32px;
+    .sobre-img {
+        position: absolute;
+        right: 30%;
+        top: 180%;
+
+    }
+
+    .sobre-img img{
+        width: 10rem;
         border-radius: 45%;
         border: #279EFF solid 3px;
-        align-items: flex-end;
-        align-self: stretch;
-
     }
 }

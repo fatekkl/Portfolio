@@ -87,26 +87,6 @@ body::-webkit-scrollbar{
 .LinksBotao a img {
     width: 2.325rem;
 }
-/*     SETA        */
-
-.SetaIMG {
-    width:  7.565rem;
-    position: absolute;
-    right: 45%;
-    animation: bounce 6s infinite;
-    transform: translateX(-50%);
-}
-
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(-100%);
-    }
-    50% {
-        transform: translateY(100%);
-    }
-}
-
-/*    SETA         */
 
 .LinksBotao a:hover {
     background-color: #2A2F4F;
@@ -127,7 +107,7 @@ body::-webkit-scrollbar{
 
 /* RESPONSIVIDADE */
 
-@media (max-width: 650px){
+@media (max-width: 900px){
 
 
     .LayoutTextos h1 {
