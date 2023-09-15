@@ -86,16 +86,4 @@
         text-wrap: nowrap;
     }
 
-    .sobre-img {
-        position: absolute;
-        right: 30%;
-        top: 180%;
-
-    }
-
-    .sobre-img img{
-        width: 10rem;
-        border-radius: 45%;
-        border: #279EFF solid 3px;
-    }
 }
