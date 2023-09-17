@@ -5,7 +5,10 @@ const LayoutHeader = () => {
     return (
     <header className="header">
         <nav className="Navegacao">
-            <img className="Ellipse" src="./assets/Ellipse 1.png" alt="Ellipse1"/>
+        <h2>Inicio</h2>
+        <h2>Sobre Mim</h2>
+        <h2>Projetos</h2>
+        <h2>Tecnologias</h2>
         </nav>
     </header>
     )
