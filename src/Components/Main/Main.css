@@ -74,14 +74,14 @@ body::-webkit-scrollbar{
     align-items: center;
     padding: 0.5rem;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 1rem;
     gap: 6px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     justify-content: center;
     color: #0C356A;
     box-shadow: inset 0px 0px 15px;
-    transition: all 0.6s ease-in-out 0s;
+    transition: all 0.6s ease-in-out 60ms;
 }
 
 .LinksBotao a img {
