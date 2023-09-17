@@ -1,3 +1,8 @@
+html {
+    min-width: 320px;
+    max-width: 1400px;
+}
+
 .Secao2 {
     display: flex;
     justify-content: space-between;
@@ -8,6 +13,7 @@
     background-color: #0C356A;
     border-top: #279EFF 9px solid;
     transition: all 1s;
+    flex-wrap: wrap;
 }
 
 .SobreMim {
@@ -32,13 +38,12 @@
 }
 
 .Secao2:hover h1 {
-    max-width: 22.875rem;
+    max-width: 50%;
     justify-content: right;
 }
 
 .SobreMim p {
     font-family: 'Montserrat', sans-serif;
-    text-indent: 10px;
     justify-content: center;
     margin-left: 1rem;
     font-size: 1.2rem;
@@ -47,7 +52,7 @@
 
 .sobre-img {
     margin-top: 6.045rem;
-    margin-right: 2rem;
+    margin-right: 6rem;
 }
 
 .sobre-img  img{
@@ -68,22 +73,31 @@
 
 }
 
-
 @media (max-width: 1050px) {
 
     .SobreMim {
        display: flex;
-
     }
     
     .SobreMim p {
-        font-size: 0.9rem;
+        font-size: 0.875rem;
         text-align: center;
+        width: 100%;
     }
 
     .SobreMim h1 {
         font-size: 1.475rem;
         text-wrap: nowrap;
+    }
+
+    .sobre-img {
+        margin-top: 2.045rem;
+        margin-left: 13rem;
+        justify-content: center;
+    }
+
+    .sobre-img img {
+        width: 13.875rem;
     }
 
 }
