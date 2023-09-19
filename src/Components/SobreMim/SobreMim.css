@@ -1,12 +1,9 @@
-html {
-    min-width: 320px;
-    max-width: 1400px;
-}
 
 .Secao2 {
     display: flex;
     justify-content: space-between;
     height: 48.4rem;
+    width: 100vw;
     box-shadow: 
     inset -50px -50px 50px rgba(255, 255, 255, 0.01),
     inset 50px 50px 50px rgba(0,0,0,0.2);
@@ -47,7 +44,7 @@ html {
     justify-content: center;
     margin-left: 1rem;
     font-size: 1.2rem;
-    width: 40rem;
+    width: 50vw;
 }
 
 .sobre-img {
@@ -73,7 +70,7 @@ html {
 
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1040px) and (min-width: 350px) {
 
     .SobreMim {
        display: flex;

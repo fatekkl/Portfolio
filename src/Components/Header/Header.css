@@ -10,7 +10,6 @@
 .Navegacao {
     display: flex;
     gap: 20px;
-    justify-content: left;
 }
 
 .Navegacao h2 {
@@ -25,4 +24,10 @@
 
 .Navegacao h2:hover {
     cursor: pointer;
+}
+
+@media (max-width: 540px) and (min-width: 350px) {
+    .Navegacao h2 {
+        border-bottom: none;
+    }
 }

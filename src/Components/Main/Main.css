@@ -6,8 +6,7 @@ body {
     background-color: #fff;
     color: #000;
     box-sizing: border-box;
-    width: 100vw;
-    margin: 0 auto;
+    margin: 0;
 }
 
 body::-webkit-scrollbar{
@@ -18,7 +17,6 @@ body::-webkit-scrollbar{
 .Layout {   
     height: 44rem; 
     width: 100%;
-    background: linear-gradient(transparent , white 102%);
 }
 
 .LayoutTextos {
@@ -30,8 +28,7 @@ body::-webkit-scrollbar{
 
 .LayoutTextos h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 28px;
-
+    font-size: 2rem;
 }
 
 .Layout span {
@@ -107,7 +104,7 @@ body::-webkit-scrollbar{
 
 /* RESPONSIVIDADE */
 
-@media (max-width: 900px){
+@media (max-width: 1040px) and (min-width: 350px){
 
 
     .LayoutTextos h1 {
