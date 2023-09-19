@@ -2,7 +2,6 @@ import LayoutPrincipal from "./Components/Main";
 import LayoutHeader from "./Components/Header";
 import SobreMim from "./Components/SobreMim";
 import Projetos from "./Components/Projetos";
-import DarkMode from "./Components/DarkMode";
 
 function App() {
   return (
@@ -10,7 +9,6 @@ function App() {
     <LayoutHeader/>
     <LayoutPrincipal/>
     <SobreMim/>
-    <DarkMode/>
     <Projetos/>
     </>
   );
