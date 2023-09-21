@@ -3,6 +3,7 @@ import LayoutHeader from "./Components/Header";
 import SobreMim from "./Components/SobreMim";
 import Projetos from "./Components/Projetos";
 
+
 function App() {
   return (
     <>
@@ -10,6 +11,7 @@ function App() {
     <LayoutPrincipal/>
     <SobreMim/>
     <Projetos/>
+    <Darkbutton/>
     </>
   );
 
