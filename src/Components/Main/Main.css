@@ -19,10 +19,6 @@ body::-webkit-scrollbar{
     width: 100%;
 }
 
-.Layout.dark {   
-    background-color: #000;
-}
-
 .LayoutTextos {
     display: flex;
     flex-flow: column wrap;
