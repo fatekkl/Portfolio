@@ -1,0 +1,44 @@
+
+.div-modoescuro input{
+    display: none;
+    position: absolute;
+    width: 50px;
+    opacity: 0;
+}
+
+.labelclasse{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 5%;
+    top: 2%;
+    background-color: #279EFF;
+    border-radius: 50px;
+    padding: 5px;
+    width: 50px;
+    height: 26px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.labelclasse.dark {
+    background-color: var(--secondary-color);
+}
+
+.labelclasse.dark .ball {
+    background-color: #E4F1FF;
+}
+
+.ball {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.inputclass:checked + label .ball {
+    transform: translateX(24px);
+}
