@@ -8,6 +8,20 @@
     height: 3.975rem;
 }
 
+.header.dark {
+    background-color: var(--primary-color);
+    border-bottom: solid var(--secondary-color) 4px;
+    width: 100vw;
+    height: 3.975rem;
+    transition: all 0.6s linear;
+}
+
+.header.dark .Navegacao h2 {
+    border-bottom: var(--secondary-color) solid 4px;
+    color: var(--font-color);
+    
+}
+
 .Navegacao {
     display: flex;
     gap: 20px;
