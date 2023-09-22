@@ -57,10 +57,10 @@ body::-webkit-scrollbar{
 }
 
 .Layout.dark .LinksBotao a:hover {
-    color: var(--primary-color);
-    background-color: transparent;
+    color: #251D3A;
+    background-color: var(--primary-color);
     transform: scale(0.9)rotateX(360deg);
-    box-shadow: inset 0px 0px 4px;
+    box-shadow: inset 0px 0px 28px;
 }
 
 .Layout.dark .LayoutTextos p {
