@@ -1,22 +1,22 @@
 import './ModoEscuro.css'
 
-const headerid = document.querySelector('#headerid')
-
-const layoutmain = document.querySelector('#layout-main')
-
-const textlayout = document.querySelector('#txtlayout')
-
-const sectionprojetos = document.querySelector('#section-projetos')
-
-const section2 = document.querySelector('#section-sobre')
-
-const botaodark = document.querySelector('#label')
-
 
 const ModoEscuro = () => {
 
-
     const classhandle = () => {
+
+    const headerid = document.querySelector('#headerid')
+
+    const layoutmain = document.querySelector('#layout-main')
+
+    const textlayout = document.querySelector('#txtlayout')
+
+   {/*const sectionprojetos = document.querySelector('#section-projetos')*/}
+   
+   {/* const section2 = document.querySelector('#section-sobre') */}
+
+    const botaodark = document.querySelector('#label')
+
         headerid.classList.toggle('dark')
         botaodark.classList.toggle('dark')
         layoutmain.classList.toggle('dark')
