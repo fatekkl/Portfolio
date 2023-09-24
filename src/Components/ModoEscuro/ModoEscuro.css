@@ -36,7 +36,7 @@
     width: 24px;
     position: absolute;
     transform: translateX(0px);
-    transition: transform 0.2s linear;
+    transition: transform 0.6s linear;
 }
 
 .inputclass:checked + label .ball {

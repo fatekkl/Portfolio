@@ -3,6 +3,8 @@
     --primary-color: #E04D01;
     --secondary-color:  #FF7700;
     --font-color: #fff;
+    --dark-color: #2A2550;
+    --dark2-color: #251D3A;
 }
 
 * {
@@ -28,7 +30,7 @@ body::-webkit-scrollbar{
 .Layout.dark {
     height: 44rem; 
     width: 100%;
-    background-color: #251D3A;
+    background-color: var(--dark2-color);
     color: var(--font-color);
     box-sizing: border-box;
     margin: 0;
@@ -37,12 +39,12 @@ body::-webkit-scrollbar{
 }
 
 .Layout.dark .LinksBotao a {
-    border: 3px solid var(--primary-color)
+    border: 3px solid var(--secondary-color)
 ;
     display: flex;
     width: 20.875rem;
     height: 1.875rem;
-    color: var(--primary-color)
+    color: var(--secondary-color);
 ;
     border-radius: 22px;
     align-items: center;
@@ -57,10 +59,10 @@ body::-webkit-scrollbar{
 }
 
 .Layout.dark .LinksBotao a:hover {
-    color: #251D3A;
+    color: var(--dark-color);
     background-color: var(--primary-color);
     transform: scale(0.9)rotateX(360deg);
-    box-shadow: inset 0px 0px 28px;
+    box-shadow: inset 0px 0px px;
 }
 
 .Layout.dark .LayoutTextos p {
@@ -117,33 +119,34 @@ body::-webkit-scrollbar{
     display: flex;
     flex-direction: column;
     gap: 18px;
+    margin-left: 5%;
 }
 
 .LinksBotao a {
     display: flex;
     width: 20.875rem;
     height: 1.875rem;
-    color: #000;
-    border: 3px solid #0C356A;
-    border-radius: 22px;
+    border: 3.5px solid #0C356A;
+    border-radius: 18px;
     align-items: center;
     padding: 0.5rem;
     text-decoration: none;
     font-size: 1rem;
-    gap: 6px;
+    gap: 9px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     justify-content: center;
     color: #0C356A;
     box-shadow: inset 0px 0px 15px;
     transition: all 0.6s ease-in-out 60ms;
-    margin-left: 5%;
+ 
 }
 
 .LinksBotao a img {
+    display: flex;
     width: 2.325rem;
+    color: var(--primary-color);
 }
-
 .LinksBotao a:hover {
     background-color: #2A2F4F;
     color: #279EFF;
@@ -153,13 +156,6 @@ body::-webkit-scrollbar{
 }
 
 /*  BOTÃO  */
-
-/*  IMAGEM */
-
-.ImagemAjuste {
-    margin: 12%;
-}
-
 
 /* RESPONSIVIDADE */
 

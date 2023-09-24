@@ -8,3 +8,8 @@
      inset 50px 50px 50px rgba(0,0,0,0.2);
      border-top: #279EFF solid 6px;
  }
+
+ .container-section.dark {
+    background-color: var(--dark2-color);
+    border-color: var(--primary-color);
+ }

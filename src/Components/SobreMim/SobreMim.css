@@ -13,6 +13,20 @@
     flex-wrap: wrap;
 }
 
+.Secao2.dark {
+    border-top: var(--secondary-color) 8px solid;
+    background-color: var(--dark-color);
+}
+
+.Secao2.dark .SobreMim h1 {
+    border-color: var(--primary-color);
+    color: var(--font-color);
+}
+
+.Secao2.dark .sobre-img img {
+    border-color: var(--primary-color)
+}
+
 .SobreMim {
     display: flex;
     color: #fff;
