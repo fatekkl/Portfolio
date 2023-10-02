@@ -2,7 +2,7 @@
 :root {
     --primary-color: #E04D01;
     --secondary-color:  #FF7700;
-    --font-color: #fff;
+    --font-color: #fafafa;
     --dark-color: #2A2550;
     --dark2-color: #251D3A;
 }
@@ -127,7 +127,7 @@ body::-webkit-scrollbar{
     width: 20.875rem;
     height: 1.875rem;
     border: 3.5px solid #0C356A;
-    border-radius: 18px;
+    border-radius: 20px;
     align-items: center;
     padding: 0.5rem;
     text-decoration: none;
