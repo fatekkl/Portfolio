@@ -1,7 +1,26 @@
 import './ModoEscuro.css'
 
+import { useState , useEffect } from 'react'
 
 const ModoEscuro = () => {
+    let [isCheck , setisCheck] = useState('off')
+
+
+    useEffect(() => {
+        classhandle();
+        textimghandling();
+    }, [])
+
+       useEffect(() => {
+        const checkbox = document.querySelector('#checkinput')
+        const storage = localStorage.getItem('isCheck') ? localStorage.getItem('isCheck') : localStorage.setItem('isCheck' , isCheck)
+    
+      if (storage === 'on') {
+            checkbox.checked = true
+       } else {
+            checkbox.checked = false
+       }        
+    } , [isCheck]) 
 
     const classhandle = () => {
 
@@ -17,20 +36,41 @@ const ModoEscuro = () => {
 
     const botaodark = document.querySelector('#label')
 
+    const checkbox = document.querySelector('#checkinput')
 
-    const array = [
-        headerid,
-        layoutmain,
-        textlayout,
-        sectionprojetos,
-        section2,
-        botaodark,
-    ]
 
-    for (let index = 0; index < array.length; index++) {
-        const element = array[index];
-        element.classList.toggle('dark')
-    }
+
+        if (checkbox.checked === true) {
+            const array = [
+                headerid,
+                layoutmain,
+                textlayout,
+                sectionprojetos,
+                section2,
+                botaodark,
+            ]
+        
+            for (let index = 0; index < array.length; index++) {
+                const element = array[index];
+                element.classList.toggle('dark')
+            }
+            
+         } else {
+            const array = [
+                headerid,
+                layoutmain,
+                textlayout,
+                sectionprojetos,
+                section2,
+                botaodark,
+            ]
+        
+            for (let index = 0; index < array.length; index++) {
+                const element = array[index];
+                element.classList.remove('dark')
+            }
+        }
+
 
 
     }
@@ -55,38 +95,27 @@ const ModoEscuro = () => {
         }
     }
 
-    const localstorageset = () => {
-        const checkbox = document.querySelector('#checkinput')
-
-        let onoroff = ''
-
-        if (checkbox.checked === true) {
-
-            onoroff = 'on'
-            localStorage.setItem('darkmode' ,  onoroff)
-
-        } else {
-            onoroff = 'off'
-            localStorage.setItem('darkmode' , onoroff)
-        }
-
-    }
-
-
-    const localstorageget = () => {
-        const dark = localStorage.getItem('darkmode')
-        const checkbox = document.querySelector('#checkinput')
-
-        if (dark === 'on') {
-            checkbox.checked = true
-        }
-    }
-
     function callfn() {
+        const checkbox = document.querySelector('#checkinput')
+
         classhandle();
         textimghandling();
-        localstorageset();
+        setisCheck(() => {
+            if (checkbox.checked === true) {
+                setisCheck(() => {
+                    isCheck = 'on'
+                    localStorage.setItem('isCheck', isCheck)
+                })
+            } else {
+                setisCheck(() => {
+                    isCheck = 'off'
+                    localStorage.setItem('isCheck', isCheck)
+                })
+            }
+        })
+
     }
+
 
     return (
         <div className='div-modoescuro'>
