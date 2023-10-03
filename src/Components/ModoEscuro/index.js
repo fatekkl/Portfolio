@@ -83,12 +83,12 @@ const ModoEscuro = () => {
             const linkedinimg = document.querySelector('#linkedinimg')
       
         if (checkbox.checked === true){
-            mainh1.innerHTML = 'Front-End<br/> <strong> Developer </strong> 🦊'
+            mainh1.innerHTML = 'Front-End<br/> <strong> Developer </strong> 🐙'
             gitimg.setAttribute('src','/assets/githubdark.png')
             instaimg.setAttribute('src','/assets/instagramdark.png')
             linkedinimg.setAttribute('src', '/assets/linkedindark.png')
         } else {
-            mainh1.innerHTML = 'Front-End<br/> <strong> Developer </strong> 👾'
+            mainh1.innerHTML = 'Front-End<br/> <strong> Developer </strong> 💧'
             gitimg.setAttribute('src','/assets/github.png')
             instaimg.setAttribute('src','/assets/instagram.png')
             linkedinimg.setAttribute('src', '/assets/linkedin.png')
