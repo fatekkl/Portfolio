@@ -17,7 +17,7 @@
 }
 
 .header.dark .Navegacao h2 {
-    border-bottom: var(--secondary-color) solid 4px;
+    border-color: var(--secondary-color);
     color: var(--font-color);
     
 }
@@ -41,7 +41,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 540px) and (min-width: 350px) {
+@media (max-width: 550px) and (min-width: 451px) {
     .Navegacao h2 {
         border-bottom: none;
     }

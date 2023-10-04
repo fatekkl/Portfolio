@@ -1,6 +1,6 @@
 
 .container-section {
-    background-color: #352F44;
+    background-color: var(--dark2-color);
      width: 100vw;
      height: 50rem;
      box-shadow: 

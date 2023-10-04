@@ -40,10 +40,9 @@
     border-bottom: #279EFF 7px solid;
     margin: 10% 0% 5% 0.845em;
     font-size: 1.275rem;
-    font-family: monospace, sans-serif;
+    font-family: 'Exo', sans-serif;
     transition: all 1s;
     letter-spacing: 2px;
-    padding-top: 4%;
     border-radius: 1%;
     max-width: 14.875rem;
 }
@@ -58,7 +57,7 @@
     justify-content: center;
     margin-left: 1rem;
     font-size: 1.2rem;
-    width: 50vw;
+    max-width: 50vw;
 }
 
 .sobre-img {
@@ -84,7 +83,12 @@
 
 }
 
-@media (max-width: 1040px) and (min-width: 350px) {
+@media (max-width: 1040px) and (min-width: 451px) {
+
+
+    .Secao2:hover h1 {
+        max-width: 20.875rem;
+    }
 
     .SobreMim {
        display: flex;
@@ -93,12 +97,14 @@
     .SobreMim p {
         font-size: 0.875rem;
         text-align: center;
-        width: 100%;
+        align-items: center;
+        max-width: none;
     }
 
     .SobreMim h1 {
-        font-size: 1.475rem;
-        text-wrap: nowrap;
+        font-size: 1.175rem;
+        text-wrap: balance;
+        border-bottom: px solid #279EFF;
     }
 
     .sobre-img {
@@ -108,7 +114,8 @@
     }
 
     .sobre-img img {
-        width: 13.875rem;
+        width: 0;
+        border: none;
     }
 
 }

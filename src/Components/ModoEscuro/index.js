@@ -6,7 +6,7 @@ const ModoEscuro = () => {
     let [isCheck , setisCheck] = useState('off')
 
 
-    useEffect(() => {
+    useEffect((isCheck) => {
         classhandle();
         textimghandling();
     }, [])
@@ -83,7 +83,7 @@ const ModoEscuro = () => {
             const linkedinimg = document.querySelector('#linkedinimg')
       
         if (checkbox.checked === true){
-            mainh1.innerHTML = 'Front-End<br/> <strong> Developer </strong> 🐙'
+            mainh1.innerHTML = 'Front-End<br/> <strong> Developer </strong> 🔥'
             gitimg.setAttribute('src','/assets/githubdark.png')
             instaimg.setAttribute('src','/assets/instagramdark.png')
             linkedinimg.setAttribute('src', '/assets/linkedindark.png')
