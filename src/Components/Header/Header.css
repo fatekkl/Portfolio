@@ -4,15 +4,17 @@
 .header {
     background-color: #0C356A;
     border-bottom: solid #279EFF 4px;
-    width: 100vw;
-    height: 3.975rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
 .header.dark {
     background-color: var(--primary-color);
     border-bottom: solid var(--secondary-color) 4px;
-    width: 100vw;
-    height: 3.975rem;
+    height: 4rem;
     transition: all 0.6s linear;
 }
 
@@ -24,25 +26,34 @@
 
 .Navegacao {
     display: flex;
-    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
 }
 
 .Navegacao h2 {
-    display: flex;
+    width: 7.0rem;
     font-size: 1.1rem;
     color: #fafafa;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     border-bottom: #279EFF solid 4px;
-    margin: 1.3rem;
+    text-align: center;
 }
 
 .Navegacao h2:hover {
     cursor: pointer;
 }
 
-@media (max-width: 550px) and (min-width: 451px) {
+@media (max-width: 550px) and (min-width: 350px) {
+
+    .Navegacao {
+        flex-wrap: wrap;
+    }
+
     .Navegacao h2 {
-        border-bottom: none;
+        width: 5.0rem;
+        font-size: 0.850rem;
+        align-items: center;
     }
 }

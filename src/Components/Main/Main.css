@@ -19,21 +19,16 @@ body::-webkit-scrollbar{
 
 .Layout {   
     height: 44rem; 
-    width: 100%;
     background-color: #fff;
     color: #000;
     box-sizing: border-box;
-    margin: 0;
     transition: all 0.6s linear;
 }
 
 .Layout.dark {
-    height: 44rem; 
-    width: 100%;
     background-color: var(--dark2-color);
     color: var(--font-color);
-    box-sizing: border-box;
-    margin: 0;
+
 
 }
 
@@ -46,7 +41,7 @@ body::-webkit-scrollbar{
     color: var(--dark-color);
     background-color: var(--primary-color);
     transform: scale(0.9)rotateX(360deg);
-    box-shadow: inset 0px 0px px;
+    box-shadow: inset 0px 0px 15px;
 }
 
 .Layout.dark .LayoutTextos p {
@@ -63,14 +58,14 @@ body::-webkit-scrollbar{
 .LayoutTextos {
     display: flex;
     flex-flow: column wrap;
-    gap: 26px;
+    gap: 20px;
 }
 
 .LayoutTextos h1 {
     font-family: 'Exo', sans-serif;
     font-size: 2rem;
-    margin-top: 4%;
-    margin-left: 5%;
+    padding-top: 4%;
+    padding-left: 5%;
 }
 
 .Layout span {
@@ -82,9 +77,9 @@ body::-webkit-scrollbar{
 
 .LayoutTextos p{
     border-left: #0C356A solid;
-    max-width: 65%;
+    max-width: 50%;
     flex-wrap: wrap;
-    padding-left: 10px;
+    padding: 0.5%;
     margin-left: 3%;
 }
 
@@ -104,7 +99,8 @@ body::-webkit-scrollbar{
     display: flex;
     flex-direction: column;
     gap: 18px;
-    margin-left: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .LinksBotao a {
@@ -144,8 +140,7 @@ body::-webkit-scrollbar{
 
 /* RESPONSIVIDADE */
 
-@media (max-width: 1040px) and (min-width: 451px){
-
+@media (max-width: 1040px) and (min-width: 350px){
 
     .LayoutTextos h1 {
         text-align: center;
@@ -157,7 +152,7 @@ body::-webkit-scrollbar{
 
     .LayoutTextos p {
         text-align: center;
-        max-width: 90%;
+        max-width: 100%;
         border: none;
     }
 
@@ -167,5 +162,6 @@ body::-webkit-scrollbar{
 
     .LinksBotao {
         align-items: center;
+
     }
 }

@@ -3,12 +3,11 @@
     display: flex;
     justify-content: space-between;
     height: 48.4rem;
-    width: 100vw;
     box-shadow: 
     inset -50px -50px 50px rgba(255, 255, 255, 0.01),
     inset 50px 50px 50px rgba(0,0,0,0.2);
     background-color: #0C356A;
-    border-top: #279EFF 9px solid;
+    border-top: #279EFF 10px solid;
     transition: all 1s;
     flex-wrap: wrap;
 }
@@ -30,7 +29,7 @@
 .SobreMim {
     display: flex;
     color: #fff;
-    margin: 0% 5% 0% 0%;
+    padding: 0% 5% 0% 0%;
     flex-flow: column;
 }
 
@@ -55,20 +54,20 @@
 .SobreMim p {
     font-family: 'Montserrat', sans-serif;
     justify-content: center;
-    margin-left: 1rem;
+    padding-left: 1rem;
     font-size: 1.2rem;
     max-width: 50vw;
 }
 
 .sobre-img {
-    margin-top: 6.045rem;
-    margin-right: 6rem;
+    padding-top: 6.045rem;
+    padding-right: 6rem;
 }
 
 .sobre-img  img{
     width: 20.355rem;
     border-radius: 45%;
-    border: #279EFF solid 3px;
+    border: #279EFF solid 4px;
     animation: float 4s infinite;
     transition: all 0.9 ease-in-out 0s;
 }
@@ -83,7 +82,11 @@
 
 }
 
-@media (max-width: 1040px) and (min-width: 451px) {
+@media (max-width: 1040px) and (min-width: 350px) {
+
+    .Secao2 {
+        border-top: 5px solid #279EFF;
+    }
 
 
     .Secao2:hover h1 {
@@ -104,12 +107,11 @@
     .SobreMim h1 {
         font-size: 1.175rem;
         text-wrap: balance;
-        border-bottom: px solid #279EFF;
+        border-bottom: 4px solid #279EFF;
     }
 
     .sobre-img {
-        margin-top: 2.045rem;
-        margin-left: 13rem;
+        padding-top: 2.045rem;
         justify-content: center;
     }
 

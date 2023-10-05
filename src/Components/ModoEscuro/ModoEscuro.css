@@ -26,7 +26,7 @@
 }
 
 .labelclasse.dark .ball {
-    background-color: #E4F1FF;
+    background-color: var(--font-color);
 }
 
 .ball {
@@ -41,4 +41,23 @@
 
 .inputclass:checked + label .ball {
     transform: translateX(24px);
+}
+
+@media (max-width: 660px) and (min-width: 350px) {
+
+ .ball {
+    height: 12px;
+    width: 12px;
+ }
+
+ .labelclasse {
+    width: 25px;
+    height: 13px;
+    right: 3%;
+    top: 15%;
+ }
+
+ .inputclass:checked + label .ball {
+    transform: translateX(12px);
+}
 }
