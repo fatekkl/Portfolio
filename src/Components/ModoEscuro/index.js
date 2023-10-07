@@ -68,7 +68,7 @@ const ModoEscuro = () => {
         
             for (let index = 0; index < array.length; index++) {
                 const element = array[index];
-                element.classList.remove('dark')
+                element.classList.toggle('dark')
             }
         }
 
