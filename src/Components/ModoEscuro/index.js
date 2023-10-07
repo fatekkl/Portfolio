@@ -7,7 +7,8 @@ const ModoEscuro = () => {
 
 
     useEffect(() => {
-        callfn()
+        classhandle()
+        textimghandling()
     }, [])
 
     const storage = localStorage.getItem('isCheck') ? localStorage.getItem('isCheck') : localStorage.setItem('isCheck' , isCheck)
