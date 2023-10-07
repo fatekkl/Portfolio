@@ -7,8 +7,11 @@ const ModoEscuro = () => {
 
 
     useEffect(() => {
-        callfn()
+        classhandle()
+        textimghandling()
     }, [])
+
+    const storage = localStorage.getItem('isCheck') ? localStorage.getItem('isCheck') : localStorage.setItem('isCheck' , isCheck)
 
        useEffect(() => {
         const checkbox = document.querySelector('#checkinput')
@@ -17,7 +20,6 @@ const ModoEscuro = () => {
          } else {
               checkbox.checked = false
          }        
-        const storage = localStorage.getItem('isCheck') ? localStorage.getItem('isCheck') : localStorage.setItem('isCheck' , isCheck)
     
     } , [isCheck]) 
 
