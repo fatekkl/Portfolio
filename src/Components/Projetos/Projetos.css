@@ -1,4 +1,6 @@
 
+/* CONTAINER */
+
 .container-section {
     background-color: var(--dark2-color);
      height: 50rem;
@@ -8,10 +10,9 @@
      border-top: #279EFF solid 6px;
  }
 
-.container-section.dark {
-    background-color: var(--dark2-color);
-    border-color: var(--primary-color);
- }
+/* CONTAINER */
+
+/* CONTAINER DAS IMAGENS DE TECNOLOGIAS */
 
 .container-techs {
     display: flex;
@@ -22,6 +23,11 @@
     gap: 2rem;
 }
 
+/* CONTAINER DAS IMAGENS DE TECNOLOGIAS */
+
+
+/* IMAGENS TECNOLOGIAS */
+
 .container-techs img {
     margin-left: 10%;
     width: 50px;
@@ -31,9 +37,21 @@
     transition: all 0.5s linear;
 }
 
+/* IMAGENS TECNOLOGIAS */
+
+
 .container-techs img:hover {
     opacity: 1.0;
     scale: 1.4;
     filter: contrast(1.5);
     transition: all 0.5s linear;
 }
+
+
+
+/* DARK MODE */
+
+.container-section.dark {
+    background-color: var(--dark2-color);
+    border-color: var(--primary-color);
+ }

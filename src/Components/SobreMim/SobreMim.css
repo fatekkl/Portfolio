@@ -1,4 +1,6 @@
 
+/* CONTAINER PRINCIPAL */
+
 .Secao2 {
     display: flex;
     justify-content: space-between;
@@ -12,19 +14,9 @@
     flex-wrap: wrap;
 }
 
-.Secao2.dark {
-    border-top: var(--secondary-color) 8px solid;
-    background-color: var(--dark-color);
-}
+/* CONTAINER PRINCIPAL */
 
-.Secao2.dark .SobreMim h1 {
-    border-color: var(--primary-color);
-    color: var(--font-color);
-}
-
-.Secao2.dark .sobre-img img {
-    border-color: var(--primary-color)
-}
+/* CONTAINER TEXTOS */
 
 .SobreMim {
     display: flex;
@@ -32,6 +24,8 @@
     padding: 0% 5% 0% 0%;
     flex-flow: column;
 }
+
+/* TEXTOS  */
 
 .SobreMim h1 {
     display: flex;
@@ -59,10 +53,16 @@
     max-width: 50vw;
 }
 
+/* TEXTOS  */
+
+/* CONTAINER IMAGEM */
+
 .sobre-img {
     padding-top: 6.045rem;
     padding-right: 6rem;
 }
+
+/* CONTAINER IMAGEM */
 
 .sobre-img  img{
     width: 20.355rem;
@@ -71,6 +71,8 @@
     animation: float 4s infinite;
     transition: all 0.9 ease-in-out 0s;
 }
+
+/* ANIMAÇÃO DA FOTO */
 
 @keyframes float {
     0% , 100% {
@@ -81,6 +83,10 @@
     }
 
 }
+
+/* ANIMAÇÃO DA FOTO */
+
+/* RESPONSIVIDADE */
 
 @media (max-width: 1040px) and (min-width: 350px) {
 
@@ -94,7 +100,7 @@
     }
 
     .SobreMim {
-       display: flex;
+        display: flex;
     }
     
     .SobreMim p {
@@ -121,3 +127,21 @@
     }
 
 }
+
+/* RESPONSIVIDADE */
+
+/* DARK MODE */
+
+        .Secao2.dark {
+            border-top: var(--secondary-color) 8px solid;
+            background-color: var(--dark-color);
+        }
+        
+        .Secao2.dark .SobreMim h1 {
+            border-color: var(--primary-color);
+            color: var(--font-color);
+        }
+        
+        .Secao2.dark .sobre-img img {
+            border-color: var(--primary-color)
+        }

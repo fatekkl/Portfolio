@@ -1,5 +1,5 @@
 
-/*  HEADER */
+/*  HEADER CONTAINER */
 
 .header {
     background-color: #0C356A;
@@ -11,18 +11,10 @@
     padding: 0 20px;
 }
 
-.header.dark {
-    background-color: var(--primary-color);
-    border-bottom: solid var(--secondary-color) 4px;
-    height: 4rem;
-    transition: all 0.6s linear;
-}
+/*  HEADER CONTAINER */
 
-.header.dark .Navegacao h2 {
-    border-color: var(--secondary-color);
-    color: var(--font-color);
-    
-}
+
+/* CONTAINER CHILD */
 
 .Navegacao {
     display: flex;
@@ -30,6 +22,8 @@
     align-items: center;
     gap: 30px;
 }
+
+/* CONTAINER CHILD */
 
 .Navegacao h2 {
     font-size: 1.1rem;
@@ -44,6 +38,8 @@
     cursor: pointer;
 }
 
+/* RESPONSIVIDADE */
+
 @media (max-width: 550px) and (min-width: 350px) {
 
     .Navegacao {
@@ -54,4 +50,21 @@
         font-size: 0.850rem;
         align-items: center;
     }
+}
+
+/* RESPONSIVIDADE */
+
+
+/* DARK MODE */
+
+.header.dark {
+    background-color: var(--primary-color);
+    border-bottom: solid var(--secondary-color) 4px;
+    height: 4rem;
+    transition: all 0.6s linear;
+}
+
+.header.dark .Navegacao h2 {
+    border-color: var(--secondary-color);
+    color: var(--font-color);
 }
