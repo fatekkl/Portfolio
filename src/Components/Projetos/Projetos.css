@@ -46,11 +46,7 @@
     filter: contrast(1.5);
     transition: all 0.5s linear;
 }
-
-
-
 /* DARK MODE */
-
 .container-section.dark {
     background-color: var(--dark2-color);
     border-color: var(--primary-color);
