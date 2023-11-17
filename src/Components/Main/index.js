@@ -21,6 +21,7 @@ const LayoutPrincipal = () => {
         </div>
         </section>
     </main>
+    
 
 
  )

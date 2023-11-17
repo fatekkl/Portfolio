@@ -1,3 +1,4 @@
+import ModoEscuro from '../ModoEscuro'
 import './Header.css'
 
 const LayoutHeader = () => {
@@ -8,6 +9,7 @@ const LayoutHeader = () => {
         <h2>Inicio</h2>
         <h2>Sobre</h2>
         <h2>Projetos</h2>
+        <ModoEscuro/>
         </nav>
     </header>
     )

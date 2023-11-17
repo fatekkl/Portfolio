@@ -11,7 +11,6 @@ function App() {
     <LayoutPrincipal/>
     <SobreMim/>
     <Projetos/>
-    <ModoEscuro/>
     </>
   );
 
