@@ -83,13 +83,7 @@
     font-size: 14px;
 }
 
-.container-projects div h1 {
-    text-align: center;
-    font-size: 18px;
-    border-bottom: #279EFF solid 4px;
-    font-family: 'Montserrat', sans-serif;
-    padding: 2%;
-}
+
 
 .container-img {
     display: flex;
