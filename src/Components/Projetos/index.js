@@ -19,7 +19,7 @@ function Projetos () {
                         <p>TodoList criada com uma API REST/React</p>
                         <div className='container-img'>
                             <a className='img-link' href='https://github.com/fatekkl/TodoList' target='_blank'rel='noopener noreferrer'><img src='/assets/github.png' alt='ImagemGithub'/></a>
-                            <a className='img-link' href='' target='_blank'rel='noopener noreferrer'><img src='/assets/vercelbadge.png' width={35} alt='ImagemDownload'/></a>
+                            <a className='img-link' href='https://github.com/fatekkl/TodoList' target='_blank'rel='noopener noreferrer'><img src='/assets/vercelbadge.png' width={35} alt='ImagemDownload'/></a>
                         </div>
                     </div>
                     <div className='projects'>
@@ -35,7 +35,7 @@ function Projetos () {
                         <p>Organograma desenvolvido em React</p>
                         <div className='container-img'>
                             <a className='img-link' href='https://github.com/fatekkl/TodoList' target='_blank'rel='noopener noreferrer'><img src='/assets/github.png' alt='ImagemGithub'/></a>
-                            <a className='img-link' href='' target='_blank'rel='noopener noreferrer'><img src='/assets/vercelbadge.png' width={35} alt='ImagemDownload'/></a>
+                            <a className='img-link' href='https://github.com/fatekkl/TodoList' target='_blank'rel='noopener noreferrer'><img src='/assets/vercelbadge.png' width={35} alt='ImagemDownload'/></a>
                         </div>
                     </div>
                     <div className='projects'>
@@ -57,7 +57,7 @@ function Projetos () {
                         <p>Lorem ipsum dolor sit amet</p>
                         <div className='container-img'>
                             <a className='img-link' href='https://github.com/fatekkl/TodoList' target='_blank'rel='noopener noreferrer'><img src='/assets/github.png' alt='ImagemGithub'/></a>
-                            {/* <a className='img-link' href='' target='_blank'rel='noopener noreferrer'><img src='/assets/github.png' alt='ImagemGithub'/></a> */}
+                            {/* <a className='img-link' href='https://github.com/fatekkl/TodoList' target='_blank'rel='noopener noreferrer'><img src='/assets/github.png' alt='ImagemGithub'/></a> */}
                         </div>
                     </div>
                 </div>            

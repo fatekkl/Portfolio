@@ -21,7 +21,7 @@ const ModoEscuro = () => {
               checkbox.checked = false
          }        
     
-    } , [isCheck]) 
+    } , [storage]) 
 
     const classhandle = () => {
 
