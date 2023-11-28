@@ -16,9 +16,6 @@
 .labelclasse{
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    right: 5%;
-    top: 2%;
     background-color: #279EFF;
     border-radius: 50px;
     padding: 5px;

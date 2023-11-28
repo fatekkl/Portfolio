@@ -38,8 +38,10 @@ const ModoEscuro = () => {
     const botaodark = document.querySelector('#label')
 
     const checkbox = document.querySelector('#checkinput')
+    
+    const projects = document.querySelectorAll('.projects')
 
-
+    
 
         if (checkbox.checked === true) {
             const array = [
@@ -55,6 +57,10 @@ const ModoEscuro = () => {
                 const element = array[index];
                 element.classList.toggle('dark')
             }
+
+            projects.forEach(element => {
+                element.classList.toggle('dark')
+            });
             
          } else {
             const array = [
@@ -64,12 +70,17 @@ const ModoEscuro = () => {
                 sectionprojetos,
                 section2,
                 botaodark,
+               
             ]
         
             for (let index = 0; index < array.length; index++) {
                 const element = array[index];
                 element.classList.remove('dark')
             }
+
+            projects.forEach((element) => {
+                element.classList.remove('dark')
+            })
         }
 
 
@@ -79,20 +90,24 @@ const ModoEscuro = () => {
     const textimghandling =  () => {
             const checkbox = document.querySelector('#checkinput')
             const mainh1 = document.querySelector('#h1html')
-            const gitimg = document.querySelector('#gitimg')
+            const gitimg = document.querySelectorAll('#gitimg')
             const instaimg = document.querySelector('#instaimg')
             const linkedinimg = document.querySelector('#linkedinimg')
       
         if (checkbox.checked === true){
             mainh1.innerHTML = 'Front-End<br/> <strong> Developer </strong> 🔥'
-            gitimg.setAttribute('src','/assets/githubdark.png')
             instaimg.setAttribute('src','/assets/instagramdark.png')
             linkedinimg.setAttribute('src', '/assets/linkedindark.png')
+            gitimg.forEach((imagem) => {
+                imagem.setAttribute('src', '/assets/githubdark.png')
+            })
         } else {
             mainh1.innerHTML = 'Front-End<br/> <strong> Developer </strong> 💧'
-            gitimg.setAttribute('src','/assets/github.png')
             instaimg.setAttribute('src','/assets/instagram.png')
             linkedinimg.setAttribute('src', '/assets/linkedin.png')
+            gitimg.forEach((imagem) => {
+                imagem.setAttribute('src', '/assets/github.png')
+            })
         }
     }
 

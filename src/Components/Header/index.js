@@ -9,8 +9,8 @@ const LayoutHeader = () => {
         <h2>Inicio</h2>
         <h2>Sobre</h2>
         <h2>Projetos</h2>
-        <ModoEscuro/>
         </nav>
+        <ModoEscuro/>
     </header>
     )
 }

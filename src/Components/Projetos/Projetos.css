@@ -79,6 +79,10 @@
     gap: 8px;
 }
 
+.projects.dark {
+    border-color: var(--primary-color);
+}
+
 .projects p {
     font-size: 14px;
 }
