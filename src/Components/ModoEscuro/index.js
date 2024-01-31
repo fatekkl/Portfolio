@@ -117,6 +117,7 @@ const ModoEscuro = () => {
 
     function callfn() {
         const checkbox = document.querySelector('#checkinput')
+        textimghandling()
         setisCheck(() => {
             if (checkbox.checked === true) {
                 setisCheck(() => {
