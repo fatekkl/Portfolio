@@ -1,0 +1,41 @@
+.container {
+    background-color: #192655;
+    border-top: #279EFF solid 6px;
+    height: 25rem;
+    width: 100%;
+}
+
+.div-links {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 2%;
+   gap: 18px;
+}
+
+
+
+.div-links h3 {
+    color: #fff;
+    font-size: 32px;
+}
+
+.div-copy {
+    width: 32rem;
+    height: 15rem;
+}
+
+.copy-item {
+    display: flex;
+    justify-content: center;
+    background-color: #3E54AC;
+    border: 4px solid #C4B0FF;
+    color: #C4B0FF;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 40px;
+    margin: 2%;
+    margin-top: 10%;
+    border-radius: 15px;
+}

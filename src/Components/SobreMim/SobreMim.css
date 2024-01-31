@@ -64,7 +64,7 @@
 
 /* CONTAINER IMAGEM */
 
-.sobre-img  img{
+.sobre-img img{
     width: 20.355rem;
     border-radius: 45%;
     border: #279EFF solid 4px;
@@ -143,5 +143,6 @@
         }
         
         .Secao2.dark .sobre-img img {
-            border-color: var(--primary-color)
+            border-color: var(--primary-color);
+           
         }
