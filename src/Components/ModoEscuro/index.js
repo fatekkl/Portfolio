@@ -17,8 +17,10 @@ const ModoEscuro = () => {
         const checkbox = document.querySelector('#checkinput')
         if (storage === 'on') {
               checkbox.checked = true
+              classhandle();
          } else {
               checkbox.checked = false
+              classhandle();
          }        
     
     } , [storage]) 
@@ -113,8 +115,6 @@ const ModoEscuro = () => {
 
     function callfn() {
         const checkbox = document.querySelector('#checkinput')
-
-        classhandle();
         textimghandling();
         setisCheck(() => {
             if (checkbox.checked === true) {
