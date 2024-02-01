@@ -16,7 +16,7 @@
 .labelclasse{
     display: flex;
     justify-content: space-between;
-    background-color: #279EFF;
+    background-color: var(--fonte-primaria-clara);
     border-radius: 50px;
     padding: 5px;
     width: 50px;
@@ -30,7 +30,7 @@
 /*  BOLINHA DA CHECKBOX */
 
 .ball {
-    background-color: #fff;
+    background-color: var(--font-color-cinza);
     border-radius: 50%;
     height: 24px;
     width: 24px;
@@ -78,9 +78,9 @@
 /* DARK MODE */
 
      .labelclasse.dark {
-         background-color: var(--secondary-color);
+         background-color: var(--fonte-secundaria-escura);
      }
      
      .labelclasse.dark .ball {
-         background-color: var(--font-color);
+         background-color: var(--font-color-cinza);
      }
