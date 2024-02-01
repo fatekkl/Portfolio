@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap');
-:root {
-    --primary-color: #E04D01;
-    --secondary-color:  #FF7700;
-    --font-color: #fafafa;
-    --dark-color: #2A2550;
-    --dark2-color: #251D3A;
-}
+
 
 * {
     margin: 0;
@@ -50,7 +44,7 @@ body::-webkit-scrollbar{
 }
 
 .LayoutTextos p{
-    border-left: #0C356A solid;
+    border-left: var(--fonte-secundaria-clara) solid;
     max-width: 50%;
     flex-wrap: wrap;
     padding: 0.5%;
@@ -58,11 +52,11 @@ body::-webkit-scrollbar{
 }
 
 .LayoutTextos strong {
-    color: #0C356A;
+    color: var(--fonte-secundaria-clara);
 }
 
 .LayoutTextos strong:hover {
-    color:#279EFF;
+    color:var(--fonte-primaria-clara);
 }
 
 /* LAYOUT PRINCIPAL */
@@ -81,7 +75,7 @@ body::-webkit-scrollbar{
     display: flex;
     width: 20.875rem;
     height: 1.875rem;
-    border: 3.5px solid #0C356A;
+    border: 3.5px solid var(--fonte-secundaria-clara);
     border-radius: 40px;
     align-items: center;
     padding: 0.5rem;
@@ -91,7 +85,7 @@ body::-webkit-scrollbar{
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     justify-content: center;
-    color: #0C356A;
+    color: var(--fonte-secundaria-clara);
     box-shadow: inset 0px 0px 5px;
     transition: all 0.6s ease-in-out 90ms;
  
@@ -100,11 +94,11 @@ body::-webkit-scrollbar{
 .LinksBotao a img {
     display: flex;
     width: 2.325rem;
-    color: var(--primary-color);
+    color: var(--fonte-primaria-escura);
 }
 .LinksBotao a:hover {
-    background-color: var(--dark2-color);
-    color: #279EFF;
+    background-color: var(--fonte-escura-bg2);
+    color: var(--fonte-primaria-clara);
     transform: scale(0.9)rotateX(360deg);
     box-shadow: inset 0px 0px 25px;
 
@@ -146,34 +140,34 @@ body::-webkit-scrollbar{
 
 /* DARK MODE  */
     .Layout.dark {
-        background-color: var(--dark2-color);
-        color: var(--font-color);
+        background-color: var(--fonte-escura-bg2);
+        color: var(--font-color-cinza);
     
     
     }
     
     .Layout.dark .LinksBotao a {
-       border-color: var(--secondary-color);
-       color: var(--primary-color);
+       border-color: var(--fonte-secundaria-escura);
+       color: var(--fonte-primaria-escura);
     }
     
     .Layout.dark .LinksBotao a:hover {
-        color: var(--dark-color);
-        background-color: var(--primary-color);
+        color: var(--fonte-escura-bg2);
+        background-color: var(--fonte-primaria-escura);
         transform: scale(0.9)rotateX(360deg);
         box-shadow: inset 0px 0px 15px;
     }
     
     .Layout.dark .LayoutTextos p {
-        border-left: var(--primary-color) solid;
+        border-left: var(--fonte-primaria-escura) solid;
     }
     
     .Layout.dark .LayoutTextos strong {
-        color: var(--primary-color);
+        color: var(--fonte-primaria-escura);
     }
     
     .Layout.dark .LayoutTextos strong:hover {
-        color: var(--secondary-color);
+        color: var(--fonte-secundaria-escura);
     }
 
 /* DARK MODE  */

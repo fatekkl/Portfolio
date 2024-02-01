@@ -1,3 +1,13 @@
+:root {
+  --fonte-primaria-clara: #279EFF;
+  --fonte-secundaria-clara: #0C356A;
+  --fonte-primaria-escura: #E04D01;
+  --fonte-secundaria-escura:  #FF7700;
+  --font-color-cinza: #fafafa;
+  --fonte-escura-bg: #2A2550;
+  --fonte-escura-bg2: #251D3A;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

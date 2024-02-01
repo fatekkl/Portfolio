@@ -2,8 +2,8 @@
 /*  HEADER CONTAINER */
 
 .header {
-    background-color: #0C356A;
-    border-bottom: solid #279EFF 4px;
+    background-color: var(--fonte-secundaria-clara);
+    border-bottom: solid var(--fonte-primaria-clara) 4px;
     height: 4rem;
     display: flex;
     align-items: center;
@@ -30,7 +30,7 @@
     color: #fafafa;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    border-bottom: #279EFF solid 4px;
+    border-bottom: var(--fonte-primaria-clara) solid 4px;
     text-align: center;
 }
 
@@ -58,13 +58,13 @@
 /* DARK MODE */
 
 .header.dark {
-    background-color: var(--primary-color);
-    border-bottom: solid var(--secondary-color) 4px;
+    background-color: var(--fonte-primaria-escura);
+    border-bottom: solid var(--fonte-secundaria-escura) 4px;
     height: 4rem;
     transition: all 0.6s linear;
 }
 
 .header.dark .Navegacao h2 {
-    border-color: var(--secondary-color);
-    color: var(--font-color);
+    border-color: var(--fonte-secundaria-escura);
+    color: var(--font-color-cinza);
 }
