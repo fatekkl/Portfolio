@@ -18,11 +18,11 @@ const ModoEscuro = () => {
         if (storage === 'on') {
               checkbox.checked = true
               classhandle();
-              textimghandling();
+              textimghandling(); // renderização pra ativar quando a vercel for aberta
          } else {
               checkbox.checked = false
               classhandle();
-              textimghandling();
+              textimghandling();  // renderização pra ativar quando a vercel for aberta
          }        
     
     } , [storage]) 
@@ -117,7 +117,6 @@ const ModoEscuro = () => {
 
     function callfn() {
         const checkbox = document.querySelector('#checkinput')
-        textimghandling()
         setisCheck(() => {
             if (checkbox.checked === true) {
                 setisCheck(() => {
@@ -131,8 +130,10 @@ const ModoEscuro = () => {
                 })
             }
         })
-        classhandle()
-
+        textimghandling()
+        if (storage === "on" && "off") {
+            classhandle()
+        } 
     }
 
 
