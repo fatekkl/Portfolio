@@ -3,6 +3,7 @@ import './Main.css'
 const LayoutPrincipal = () => {
 
     return (
+    
     <main id='layout-main' className="Layout">
         <section id='txtlayout' className="LayoutTextos">
             <h1 id='h1html'>Front-End<br/> <strong>Developer</strong>💧</h1>
