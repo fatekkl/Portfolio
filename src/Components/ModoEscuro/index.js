@@ -4,8 +4,7 @@ import { useState, useEffect } from 'react'
 
 const ModoEscuro = () => {
     const [isCheck, setisCheck] = useState('off')
-    localStorage.getItem("Check") ? localStorage.getItem("Check") : localStorage.setItem("Check" , isCheck)
-    const strg = localStorage.getItem("Check")
+    const strg = localStorage.getItem("Check") ? localStorage.getItem("Check") : localStorage.setItem("Check" , isCheck)
 
     useEffect(() => {
         const checkbox = document.querySelector('#checkinput')
@@ -43,11 +42,11 @@ const ModoEscuro = () => {
             if (isCheck === "on") {
                 
                 array.forEach((item) => {
-                    item.classList.toggle("dark")
+                    item.classList.add("dark")
                    
                 })
     
-                mainh1.innerHTML = 'Front-End<br/> <strong> Developer </strong>🌕'
+                mainh1.innerHTML = 'Front-End<br/> <strong> Developer </strong>🌓'
                 // instaimg.setAttribute('src', '/assets/instagramdark.png')
                 // linkedinimg.setAttribute('src', '/assets/linkedindark.png')
                 // gitimg.forEach((imagem) => {
@@ -58,7 +57,7 @@ const ModoEscuro = () => {
             } else {
     
                 array.forEach((item) => {
-                    item.classList.toggle("dark")
+                    item.classList.remove("dark")
                    
                 })
     
