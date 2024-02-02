@@ -64,6 +64,10 @@ const ModoEscuro = () => {
             })
         }
 
+        projects.forEach((item) => {
+            item.classList.toggle("dark")
+        })
+
 
     }
 
