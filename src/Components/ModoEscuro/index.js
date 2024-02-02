@@ -47,12 +47,12 @@ const ModoEscuro = () => {
                    
                 })
     
-                mainh1.innerHTML = 'Front-End<br/> <strong> Developer </strong> 🔥'
-                instaimg.setAttribute('src', '/assets/instagramdark.png')
-                linkedinimg.setAttribute('src', '/assets/linkedindark.png')
-                gitimg.forEach((imagem) => {
-                    imagem.setAttribute('src', '/assets/githubdark.png')
-                })
+                mainh1.innerHTML = 'Front-End<br/> <strong> Developer </strong>🌕'
+                // instaimg.setAttribute('src', '/assets/instagramdark.png')
+                // linkedinimg.setAttribute('src', '/assets/linkedindark.png')
+                // gitimg.forEach((imagem) => {
+                //     imagem.setAttribute('src', '/assets/githubdark.png')
+                // })
     
                 
             } else {
@@ -62,7 +62,7 @@ const ModoEscuro = () => {
                    
                 })
     
-                mainh1.innerHTML = 'Front-End<br/> <strong> Developer </strong> 💧'
+                mainh1.innerHTML = 'Front-End<br/> <strong> Developer </strong> 🌑'
                 instaimg.setAttribute('src', '/assets/instagram.png')
                 linkedinimg.setAttribute('src', '/assets/linkedin.png')
                 gitimg.forEach((imagem) => {
@@ -70,9 +70,6 @@ const ModoEscuro = () => {
                 })
             }
     
-            projects.forEach((item) => {
-                item.classList.toggle("dark")
-            })
     
     
         }
