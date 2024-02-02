@@ -9,93 +9,180 @@ const ModoEscuro = () => {
 
     useEffect(() => {
         const checkbox = document.querySelector('#checkinput')
+
+        const classhandle = () => {
+
+            const headerid = document.querySelector('#headerid')
+    
+            const layoutmain = document.querySelector('#layout-main')
+    
+            const textlayout = document.querySelector('#txtlayout')
+    
+            const sectionprojetos = document.querySelector('#section-projetos')
+    
+            const section2 = document.querySelector('#section-sobre')
+    
+            const botaodark = document.querySelector('#label')
+    
+            const projects = document.querySelectorAll('.projects')
+    
+            const mainh1 = document.querySelector('#h1html')
+            const gitimg = document.querySelectorAll('#gitimg')
+            const instaimg = document.querySelector('#instaimg')
+            const linkedinimg = document.querySelector('#linkedinimg')
+    
+            const array = [
+                headerid,
+                layoutmain,
+                textlayout,
+                sectionprojetos,
+                section2,
+                botaodark,
+            ]
+    
+            if (isCheck === "on") {
+                
+                array.forEach((item) => {
+                    item.classList.toggle("dark")
+                   
+                })
+    
+                mainh1.innerHTML = 'Front-End<br/> <strong> Developer </strong> 🔥'
+                instaimg.setAttribute('src', '/assets/instagramdark.png')
+                linkedinimg.setAttribute('src', '/assets/linkedindark.png')
+                gitimg.forEach((imagem) => {
+                    imagem.setAttribute('src', '/assets/githubdark.png')
+                })
+    
+                
+            } else {
+    
+                array.forEach((item) => {
+                    item.classList.toggle("dark")
+                   
+                })
+    
+                mainh1.innerHTML = 'Front-End<br/> <strong> Developer </strong> 💧'
+                instaimg.setAttribute('src', '/assets/instagram.png')
+                linkedinimg.setAttribute('src', '/assets/linkedin.png')
+                gitimg.forEach((imagem) => {
+                    imagem.setAttribute('src', '/assets/github.png')
+                })
+            }
+    
+            projects.forEach((item) => {
+                item.classList.toggle("dark")
+            })
+    
+    
+        }
+
         if (isCheck === "on") {
             setisCheck(strg)
             checkbox.checked = true
             classhandle()
-            textimghandling("off")
         } else {
             setisCheck(strg)
             checkbox.checked = false
             classhandle()
-            textimghandling("on")
         }
 
 
-    }, [isCheck])
+    }, [isCheck , strg])
 
 
-    const classhandle = () => {
+    // const classhandle = () => {
 
-        const headerid = document.querySelector('#headerid')
+    //     const headerid = document.querySelector('#headerid')
 
-        const layoutmain = document.querySelector('#layout-main')
+    //     const layoutmain = document.querySelector('#layout-main')
 
-        const textlayout = document.querySelector('#txtlayout')
+    //     const textlayout = document.querySelector('#txtlayout')
 
-        const sectionprojetos = document.querySelector('#section-projetos')
+    //     const sectionprojetos = document.querySelector('#section-projetos')
 
-        const section2 = document.querySelector('#section-sobre')
+    //     const section2 = document.querySelector('#section-sobre')
 
-        const botaodark = document.querySelector('#label')
+    //     const botaodark = document.querySelector('#label')
 
-        const projects = document.querySelectorAll('.projects')
+    //     const projects = document.querySelectorAll('.projects')
 
-        const array = [
-            headerid,
-            layoutmain,
-            textlayout,
-            sectionprojetos,
-            section2,
-            botaodark,
-        ]
+    //     const mainh1 = document.querySelector('#h1html')
+    //     const gitimg = document.querySelectorAll('#gitimg')
+    //     const instaimg = document.querySelector('#instaimg')
+    //     const linkedinimg = document.querySelector('#linkedinimg')
 
-        if (isCheck === "on") {
+    //     const array = [
+    //         headerid,
+    //         layoutmain,
+    //         textlayout,
+    //         sectionprojetos,
+    //         section2,
+    //         botaodark,
+    //     ]
+
+    //     if (isCheck === "on") {
             
-            array.forEach((item) => {
-                item.classList.toggle("dark")
+    //         array.forEach((item) => {
+    //             item.classList.toggle("dark")
                
-            })
-        } else {
+    //         })
 
-            array.forEach((item) => {
-                item.classList.toggle("dark")
+    //         mainh1.innerHTML = 'Front-End<br/> <strong> Developer </strong> 🔥'
+    //         instaimg.setAttribute('src', '/assets/instagramdark.png')
+    //         linkedinimg.setAttribute('src', '/assets/linkedindark.png')
+    //         gitimg.forEach((imagem) => {
+    //             imagem.setAttribute('src', '/assets/githubdark.png')
+    //         })
+
+            
+    //     } else {
+
+    //         array.forEach((item) => {
+    //             item.classList.toggle("dark")
                
-            })
-        }
+    //         })
 
-        projects.forEach((item) => {
-            item.classList.toggle("dark")
-        })
+    //         mainh1.innerHTML = 'Front-End<br/> <strong> Developer </strong> 💧'
+    //         instaimg.setAttribute('src', '/assets/instagram.png')
+    //         linkedinimg.setAttribute('src', '/assets/linkedin.png')
+    //         gitimg.forEach((imagem) => {
+    //             imagem.setAttribute('src', '/assets/github.png')
+    //         })
+    //     }
+
+    //     projects.forEach((item) => {
+    //         item.classList.toggle("dark")
+    //     })
 
 
-    }
+    // }
 
 
-    const textimghandling = (onoroff) => {
-        const mainh1 = document.querySelector('#h1html')
-        const gitimg = document.querySelectorAll('#gitimg')
-        const instaimg = document.querySelector('#instaimg')
-        const linkedinimg = document.querySelector('#linkedinimg')
+    // const textimghandling = (onoroff) => {
+    //     const mainh1 = document.querySelector('#h1html')
+    //     const gitimg = document.querySelectorAll('#gitimg')
+    //     const instaimg = document.querySelector('#instaimg')
+    //     const linkedinimg = document.querySelector('#linkedinimg')
 
-        if (onoroff === "on") {
-            mainh1.innerHTML = 'Front-End<br/> <strong> Developer </strong> 🔥'
-            instaimg.setAttribute('src', '/assets/instagramdark.png')
-            linkedinimg.setAttribute('src', '/assets/linkedindark.png')
-            gitimg.forEach((imagem) => {
-                imagem.setAttribute('src', '/assets/githubdark.png')
-            })
-        } else {
-            mainh1.innerHTML = 'Front-End<br/> <strong> Developer </strong> 💧'
-            instaimg.setAttribute('src', '/assets/instagram.png')
-            linkedinimg.setAttribute('src', '/assets/linkedin.png')
-            gitimg.forEach((imagem) => {
-                imagem.setAttribute('src', '/assets/github.png')
-            })
-        }
-    }
+    //     if (onoroff === "on") {
+    //         mainh1.innerHTML = 'Front-End<br/> <strong> Developer </strong> 🔥'
+    //         instaimg.setAttribute('src', '/assets/instagramdark.png')
+    //         linkedinimg.setAttribute('src', '/assets/linkedindark.png')
+    //         gitimg.forEach((imagem) => {
+    //             imagem.setAttribute('src', '/assets/githubdark.png')
+    //         })
+    //     } else {
+    //         mainh1.innerHTML = 'Front-End<br/> <strong> Developer </strong> 💧'
+    //         instaimg.setAttribute('src', '/assets/instagram.png')
+    //         linkedinimg.setAttribute('src', '/assets/linkedin.png')
+    //         gitimg.forEach((imagem) => {
+    //             imagem.setAttribute('src', '/assets/github.png')
+    //         })
+    //     }
+    // }
 
-    function callfn() {
+    function setStrg() {
         if (isCheck === "off") {
             setisCheck("on")
             localStorage.setItem("Check" , "on")
@@ -106,15 +193,12 @@ const ModoEscuro = () => {
 
         }
 
-        
-        
-
     }
 
 
     return (
         <div className='div-modoescuro'>
-            <input onClick={callfn} className='inputclass' type='checkbox' id='checkinput' />
+            <input onClick={setStrg} className='inputclass' type='checkbox' id='checkinput' />
             <label className='labelclasse' htmlFor='checkinput' id='label'>
                 <div className="ball"></div>
             </label>
@@ -125,3 +209,27 @@ const ModoEscuro = () => {
 }
 
 export default ModoEscuro
+
+
+// const textimghandling = (onoroff) => {
+//     const mainh1 = document.querySelector('#h1html')
+//     const gitimg = document.querySelectorAll('#gitimg')
+//     const instaimg = document.querySelector('#instaimg')
+//     const linkedinimg = document.querySelector('#linkedinimg')
+
+//     if (onoroff === "on") {
+//         mainh1.innerHTML = 'Front-End<br/> <strong> Developer </strong> 🔥'
+//         instaimg.setAttribute('src', '/assets/instagramdark.png')
+//         linkedinimg.setAttribute('src', '/assets/linkedindark.png')
+//         gitimg.forEach((imagem) => {
+//             imagem.setAttribute('src', '/assets/githubdark.png')
+//         })
+//     } else {
+//         mainh1.innerHTML = 'Front-End<br/> <strong> Developer </strong> 💧'
+//         instaimg.setAttribute('src', '/assets/instagram.png')
+//         linkedinimg.setAttribute('src', '/assets/linkedin.png')
+//         gitimg.forEach((imagem) => {
+//             imagem.setAttribute('src', '/assets/github.png')
+//         })
+//     }
+// }
