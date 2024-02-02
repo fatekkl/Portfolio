@@ -5,22 +5,22 @@ import { useState, useEffect } from 'react'
 const ModoEscuro = () => {
     const [isCheck, setisCheck] = useState('off')
     localStorage.getItem("Check") ? localStorage.getItem("Check") : localStorage.setItem("Check" , isCheck)
-    const strg = localStorage.getItem("Check")
+    // const strg = localStorage.getItem("Check")
 
-    useEffect(() => {
-        const checkbox = document.querySelector('#checkinput')
-        if (isCheck === "on") {
-            setisCheck(strg)
-            checkbox.checked = true
-            classhandle()
-        } else {
-            setisCheck(strg)
-            checkbox.checked = false
-            classhandle()
-        }
+    // useEffect(() => {
+    //     const checkbox = document.querySelector('#checkinput')
+    //     if (isCheck === "on") {
+    //         setisCheck(strg)
+    //         checkbox.checked = true
+    //         classhandle()
+    //     } else {
+    //         setisCheck(strg)
+    //         checkbox.checked = false
+    //         classhandle()
+    //     }
 
 
-    }, [isCheck])
+    // }, [isCheck])
 
 
     const classhandle = () => {
