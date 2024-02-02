@@ -13,12 +13,12 @@ const ModoEscuro = () => {
             setisCheck(strg)
             checkbox.checked = true
             classhandle()
-            textimghandling("on")
+            textimghandling("off")
         } else {
             setisCheck(strg)
             checkbox.checked = false
             classhandle()
-            textimghandling("off")
+            textimghandling("on")
         }
 
 
