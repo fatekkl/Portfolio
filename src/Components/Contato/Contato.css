@@ -1,3 +1,5 @@
 .container {
     height: 25rem;
+    border-top: 4px solid var();
+    background-color: var(--fonte-escura-bg);
 }

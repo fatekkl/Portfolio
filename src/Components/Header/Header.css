@@ -25,8 +25,9 @@
 
 /* CONTAINER CHILD */
 
-.Navegacao h2 {
+.Navegacao li {
     font-size: 1.1rem;
+    list-style: none;
     color: #fafafa;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -34,7 +35,7 @@
     text-align: center;
 }
 
-.Navegacao h2:hover {
+.Navegacao li:hover {
     cursor: pointer;
 }
 
@@ -46,8 +47,8 @@
         flex-wrap: wrap;
     }
 
-    .Navegacao h2 {
-        font-size: 0.850rem;
+    .Navegacao li {
+        font-size: 20px;
         align-items: center;
     }
 }
@@ -64,7 +65,7 @@
     transition: all 0.6s linear;
 }
 
-.header.dark .Navegacao h2 {
+.header.dark .Navegacao li {
     border-color: var(--fonte-secundaria-escura);
     color: var(--font-color-cinza);
 }

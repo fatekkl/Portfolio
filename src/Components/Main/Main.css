@@ -17,7 +17,7 @@ body::-webkit-scrollbar{
 
 .Layout {   
     height: 44rem; 
-    background-color: #fff;
+    background-color: #fafafa;
     color: #000;
     box-sizing: border-box;
     transition: all 0.6s linear;
@@ -45,9 +45,9 @@ body::-webkit-scrollbar{
 
 .LayoutTextos p{
     border-left: var(--fonte-secundaria-clara) solid;
-    max-width: 50%;
     flex-wrap: wrap;
-    padding: 0.5%;
+    max-width: 50%;
+    padding: 1%;
     margin-left: 3%;
 }
 
@@ -73,16 +73,16 @@ body::-webkit-scrollbar{
 
 .LinksBotao a {
     display: flex;
-    width: 20.875rem;
-    height: 1.875rem;
+    width: 350px;
+    height: 30px;
     border: 3.5px solid var(--fonte-secundaria-clara);
-    border-radius: 40px;
+    border-radius: 20px;
     align-items: center;
-    padding: 0.5rem;
+    padding: 8px;
     text-decoration: none;
     font-size: 1rem;
     gap: 8px;
-    font-weight: bold;
+    font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     justify-content: center;
     color: var(--fonte-secundaria-clara);
@@ -92,16 +92,18 @@ body::-webkit-scrollbar{
 }
 
 .LinksBotao a img {
-    display: flex;
-    width: 2.325rem;
-    color: var(--fonte-primaria-escura);
+    width: 35px;
 }
 .LinksBotao a:hover {
-    background-color: var(--fonte-escura-bg2);
-    color: var(--fonte-primaria-clara);
-    transform: scale(0.9)rotateX(360deg);
+    background-color: var(--fonte-primaria-clara);
+    color: var(--fonte-secundaria-clara);
+    transform: scale(0.985)rotateX(360deg);
     box-shadow: inset 0px 0px 25px;
 
+}
+
+.LinksBotao text:hover {
+    color: var(--font-color-cinza);
 }
 
 /*  BOTÃO  */
@@ -111,18 +113,25 @@ body::-webkit-scrollbar{
 
 @media (max-width: 1040px) and (min-width: 350px){
 
+
+    .Layout {
+        height: 52rem;
+    }
+
     .LayoutTextos h1 {
         text-align: center;
+        padding: 5% 0% 0%;
     }
 
     .LayoutTextos span {
         text-align: center;
+        margin: 0%;
     }
 
     .LayoutTextos p {
         text-align: center;
-        max-width: 100%;
-        border: none;
+        max-width: max-content;
+        margin: 0% 8% 0%;
     }
 
     .Layout.dark .LayoutTextos p {
@@ -130,8 +139,14 @@ body::-webkit-scrollbar{
     }
 
     .LinksBotao {
+        display: flex;
         align-items: center;
+    }
 
+    .LinksBotao a {
+        width: 250px;
+        height: 20px;
+        padding: 10px;
     }
 }
 

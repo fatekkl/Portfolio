@@ -56,13 +56,13 @@
 @media (max-width: 660px) and (min-width: 350px) {
 
     .ball {
-    height: 12px;
-    width: 12px;
+    height: 19px;
+    width: 19px;
  }
 
  .labelclasse {
-    width: 25px;
-    height: 13px;
+    width: 36px;
+    height: 19px;
     right: 3%;
     top: 15%;
  }

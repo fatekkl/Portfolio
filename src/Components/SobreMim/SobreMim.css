@@ -4,7 +4,7 @@
 .Secao2 {
     display: flex;
     justify-content: space-between;
-    height: 48.4rem;
+    height: 48rem;
     box-shadow: 
     inset -50px -50px 50px rgba(255, 255, 255, 0.01),
     inset 50px 50px 50px rgba(0,0,0,0.2);
@@ -21,8 +21,8 @@
 .SobreMim {
     display: flex;
     color: var(--font-color-cinza);
-    padding: 0% 5% 0% 0%;
-    flex-flow: column;
+    flex-direction: column;
+    max-width: 50vw;
 }
 
 /* TEXTOS  */
@@ -30,27 +30,24 @@
 .SobreMim h1 {
     display: flex;
     justify-content: right;
-    border-bottom: var(--fonte-primaria-clara) 7px solid;
-    margin: 10% 0% 5% 0.845em;
-    font-size: 1.275rem;
+    border-bottom: var(--fonte-primaria-clara) 8px solid;
+    margin: 10% 0% 5% 1em;
+    font-size: 26px;
     font-family: 'Exo', sans-serif;
-    transition: all 1s;
-    letter-spacing: 2px;
-    border-radius: 1%;
-    max-width: 14.875rem;
+    transition: all 1s; 
+    border-bottom-right-radius: 5px;
+    max-width: 40%;
 }
 
 .Secao2:hover h1 {
-    max-width: 50%;
-    justify-content: right;
+   max-width: 50%;
 }
 
 .SobreMim p {
     font-family: 'Montserrat', sans-serif;
     justify-content: center;
     padding-left: 1rem;
-    font-size: 1.2rem;
-    max-width: 50vw;
+    font-size: 22px;
 }
 
 /* TEXTOS  */
@@ -58,18 +55,18 @@
 /* CONTAINER IMAGEM */
 
 .sobre-img {
-    padding-top: 6.045rem;
-    padding-right: 6rem;
+    margin-top: 6.0rem;
+    margin-right: 6.0rem;
 }
 
 /* CONTAINER IMAGEM */
 
 .sobre-img img{
-    width: 20.355rem;
-    border-radius: 45%;
+    width: 20rem;
+    border-radius: 100px;
     border: var(--fonte-primaria-clara) solid 4px;
-    animation: float 4s infinite;
-    transition: all 0.9 ease-in-out 0s;
+    animation: float 2.2s infinite;
+    transition: all 1s ease-in-out ;
 }
 
 /* ANIMAÇÃO DA FOTO */
@@ -88,43 +85,53 @@
 
 /* RESPONSIVIDADE */
 
+
 @media (max-width: 1040px) and (min-width: 350px) {
 
     .Secao2 {
-        border-top: 5px solid var(--fonte-primaria-clara);
+        border-top: 8px solid var(--fonte-primaria-clara);
+        height: 65rem;
     }
 
 
-    .Secao2:hover h1 {
-        max-width: 20.875rem;
-    }
 
     .SobreMim {
         display: flex;
+        flex-direction: column;
+        padding: 20px;
+        max-width: none;
     }
     
     .SobreMim p {
-        font-size: 0.875rem;
+        font-size: 16px;
         text-align: center;
-        align-items: center;
-        max-width: none;
+        margin: 2% 5%;
     }
 
     .SobreMim h1 {
-        font-size: 1.175rem;
-        text-wrap: balance;
-        border-bottom: 4px solid var(--fonte-primaria-clara);
+        margin: 5% 2% 2% 0%;
+        font-size: 20px;
+        flex-wrap: nowrap;
+        text-align: center;
+        border-bottom: 8px solid var(--fonte-primaria-clara);
     }
 
     .sobre-img {
-        padding-top: 2.045rem;
+        display: flex;
         justify-content: center;
+        width: 100%;
+        margin: 0;
     }
 
-    .sobre-img img {
-        width: 0;
-        border: none;
+    .sobre-img img{
+        margin-bottom: 10%;
+        width: 15rem;
+        border-radius: 0px;
+        border-bottom: var(--fonte-primaria-clara) solid 15px;
+        padding: 2px;
+        animation: none;
     }
+
 
 }
 

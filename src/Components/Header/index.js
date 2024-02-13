@@ -5,11 +5,11 @@ const LayoutHeader = () => {
 
     return (
     <header id='headerid' className="header">
-        <nav className="Navegacao">
-        <h2>Inicio</h2>
-        <h2>Sobre</h2>
-        <h2>Projetos</h2>
-        </nav>
+        <ul className="Navegacao">
+        <li>Inicio</li>
+        <li>Sobre</li>
+        <li>Projetos</li>
+        </ul>
         <ModoEscuro/>
     </header>
     )
