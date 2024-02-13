@@ -5,6 +5,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Responsividade
 
-O projeto funciona apenas em dispositivos com mais de 410 pixeis de largura.
+O projeto funciona apenas em dispositivos 350 pixels de largura ou mais.
 
 
