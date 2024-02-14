@@ -4,7 +4,7 @@
 .Secao2 {
     display: flex;
     justify-content: space-between;
-    height: 48rem;
+    height: 50rem;
     box-shadow: 
     inset -50px -50px 50px rgba(255, 255, 255, 0.01),
     inset 50px 50px 50px rgba(0,0,0,0.2);
@@ -36,7 +36,7 @@
     font-family: 'Exo', sans-serif;
     transition: all 1s; 
     border-bottom-right-radius: 5px;
-    max-width: 40%;
+    max-width: 60%;
 }
 
 .Secao2:hover h1 {
@@ -90,7 +90,7 @@
 
     .Secao2 {
         border-top: 8px solid var(--fonte-primaria-clara);
-        height: 75rem;
+        height: 60rem;
     }
 
 
@@ -110,11 +110,15 @@
 
     .SobreMim h1 {
         margin: 5% 2% 2% 0%;
-        font-size: 20px;
+        font-size: 1.2rem;
         flex-wrap: nowrap;
         text-align: center;
         border-bottom: 8px solid var(--fonte-primaria-clara);
     }
+
+    .Secao2:hover h1 {
+        max-width: 60%;
+     }
 
     .sobre-img {
         display: flex;
@@ -125,8 +129,8 @@
 
     .sobre-img img{
         margin-bottom: 10%;
-        width: 15rem;
-        width: 18rem;
+        width: 12rem;
+        height: 15rem;
         border-radius: 0px;
         border-bottom: var(--fonte-primaria-clara) solid 15px;
         padding: 2px;
