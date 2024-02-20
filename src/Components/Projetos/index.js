@@ -32,11 +32,10 @@ function Projetos() {
                     </div>
                 </div>
                 <div className='projects'>
-                    <h1>Organograma</h1>
-                    <p>Organograma desenvolvido em React</p>
+                    <h1>Projeto 3</h1>
+                    <p>Lorem ipsum dolor sit amet</p>
                     <div className='container-img'>
                         <a className='img-link' href='https://github.com/fatekkl/TodoList' target='_blank' rel='noopener noreferrer'><img id='gitimg' src='/assets/github.png' alt='ImagemGithub' /></a>
-                        <a className='img-link' href='https://github.com/fatekkl/TodoList' target='_blank' rel='noopener noreferrer'><img src='/assets/vercelbadge.png' width={35} alt='ImagemDownload' /></a>
                     </div>
                 </div>
                 <div className='projects'>
