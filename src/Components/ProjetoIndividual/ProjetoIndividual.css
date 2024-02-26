@@ -1,0 +1,120 @@
+.project {
+    width: 400px;
+    height: 300px;
+    border: 0.3125rem solid var(--fonte-primaria-clara);
+    border-radius: 15px;
+    color: var(--font-color-cinza);
+    flex-wrap: wrap;
+}
+
+.project:hover p {
+    opacity: 1;
+}
+
+.project:hover h1 {
+    opacity: 1;
+}
+
+.project h1 {
+    font-weight: 400;
+    opacity: 0.6;
+    text-align: start;
+    margin-left: 8%;
+    margin-top: 4%;
+    font-size: 22px;
+    font-family: "Exo", sans-serif;
+    transition: 0.3s;
+}
+
+.project p {
+    margin: 0;
+    margin-left: 4%;
+    font-size: 14px;
+    font-family: "Roboto" , sans-serif;
+    font-weight: 400;
+    padding: 10px;
+    line-height: 1.2;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.mini-container {
+    display: flex;
+    justify-content: start;
+    margin-top: 2%;
+    gap: 8px;
+    margin-left: 6%;
+}
+
+.mini-container img {
+    width: 30px;
+    transition: 1s;
+    filter: saturate(0);
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 6%;
+    margin-top: 15%;
+}
+
+.preview-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: "Exo" , sans-serif;
+    font-weight: 400;
+    gap: 8px;
+    width: 150px;
+    color: #fff;
+    background-color: var(--fonte-primaria-clara);
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid var(--fonte-primaria-clara);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.preview-button img {
+    width: 25px;
+}
+
+.repo-button {
+    margin-right: 5%;
+    padding: 5px;
+    background-color: transparent;
+    color: #fff;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: "Exo" , sans-serif;
+    font-weight: 400;
+    gap: 8px;
+    text-decoration: none;
+    border: 2px solid var(--fonte-primaria-clara);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.preview-button:hover {
+    scale: 1.03;
+}
+
+
+
+.repo-button:hover img {
+    filter: saturate(1); 
+}
+
+.project:hover .mini-container img {
+    filter: saturate(1);
+}
+
+.repo-button img {
+    width: 25px;
+    filter: saturate(0);
+}

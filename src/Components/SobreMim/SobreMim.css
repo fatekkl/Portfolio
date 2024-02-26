@@ -45,9 +45,11 @@
 
 .SobreMim p {
     font-family: 'Montserrat', sans-serif;
-    justify-content: center;
-    padding-left: 1rem;
-    font-size: 22px;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin: 0 1rem; /* Margem à esquerda e à direita de 1rem */
+    padding: 10px;
+    line-height: 1.5;
+    font-size: 18px;
 }
 
 /* TEXTOS  */

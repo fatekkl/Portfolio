@@ -17,7 +17,7 @@ body::-webkit-scrollbar{
 
 .Layout {   
     height: 44rem; 
-    background-color: #fafafa;
+    background-color: var(--font-color-cinza);
     color: #000;
     box-sizing: border-box;
     transition: all 0.6s linear;
