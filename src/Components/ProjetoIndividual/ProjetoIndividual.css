@@ -118,3 +118,117 @@
     width: 25px;
     filter: saturate(0);
 }
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1040px) and (min-width: 350px) {
+    .project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        width: 200px;
+        height: 150px;
+        border: 4px solid var(--fonte-primaria-clara);
+        border-radius: 15px;
+        color: var(--font-color-cinza);
+        flex-wrap: wrap;
+    }
+
+    .project h1 {
+        font-weight: 400;
+        opacity: 0.6;
+        font-size: 16px;
+        font-family: "Exo", sans-serif;
+        transition: 0.3s;
+    }
+
+    .project p {
+        margin: 0;
+        margin-left: 4%;
+        font-size: 10px;
+        font-family: "Roboto" , sans-serif;
+        font-weight: 200;
+        padding: 2px;
+        line-height: 1.1;
+        opacity: 0.6;
+        transition: 0.3s;
+    }
+
+    .mini-container img {
+        width: 25px;
+        transition: 1s;
+        filter: saturate(0);
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        margin-left: 5%;
+        margin-top: 20%;
+    }
+
+    .repo-button {
+        margin-right: 5%;
+        padding: 5px;
+        background-color: transparent;
+        color: #fff;
+        width: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-family: "Exo" , sans-serif;
+        font-weight: 400;
+        gap: 8px;
+        text-decoration: none;
+        border: 2px solid var(--fonte-primaria-clara);
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+
+    .repo-button {
+        margin-right: 5%;
+        padding: 5px;
+        background-color: transparent;
+        color: #fff;
+        width: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:  12px;
+        font-family: "Exo" , sans-serif;
+        font-weight: 400;
+        gap: 8px;
+        text-decoration: none;
+        border: 2px solid var(--fonte-primaria-clara);
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+
+    .repo-button img {
+        width: 20px;
+        filter: saturate(0);
+    }
+
+    .preview-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-family: "Exo" , sans-serif;
+        font-weight: 200;
+        width: 90px;
+        color: #fff;
+        background-color: var(--fonte-primaria-clara);
+        padding: 5px;
+        text-decoration: none;
+        border: 2px solid var(--fonte-primaria-clara);
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+    
+    
+}

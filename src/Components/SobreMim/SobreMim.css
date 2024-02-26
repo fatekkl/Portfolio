@@ -130,13 +130,8 @@
     }
 
     .sobre-img img{
-        margin-bottom: 10%;
-        width: 12rem;
-        height: 15rem;
-        border-radius: 0px;
-        border-bottom: var(--fonte-primaria-clara) solid 15px;
-        padding: 2px;
-        animation: none;
+       width: 0px;
+       border: 0px;
     }
 
 
