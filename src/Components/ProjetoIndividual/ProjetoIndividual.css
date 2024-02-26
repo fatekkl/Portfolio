@@ -40,7 +40,7 @@
 
 .mini-container {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     margin-top: 2%;
     gap: 8px;
     margin-left: 6%;

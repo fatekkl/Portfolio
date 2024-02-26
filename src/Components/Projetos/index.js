@@ -26,7 +26,7 @@ function Projetos() {
             </div>
             <div className='container-projects'>
                 <ProjetoIndividual  title="CRUD" desc="CRUD é uma sigla para Create, Read, Update e Delete. Foi um projeto que desenvolvi com o intuito de aprender mais sobre APIs, Protocolo HTTP, Assincronicidade e os conceitos básicos de orientação a objetos."techs={[paths.react, paths.git, paths.node, paths.js]} link="https://todo-list-fatekkl.vercel.app" repo="https://github.com/fatekkl/TodoList" />
-                <ProjetoIndividual title="E-Commerce" desc="M&D Closet, foi um freelance que fiz para uma loja de roupas local, com isso tive que interagir com o gateway de pagamento da Asaas e sua API, além disso também interagi com a transportadora a cada pedido que é feito." techs={[paths.html , paths.css , paths.php]} link="https://closetmed.com.br/" repo=""/>
+                <ProjetoIndividual title="E-Commerce" desc="M&D Closet, foi um freelance que fiz para uma loja de roupas local, com isso tive que interagir com o gateway de pagamento da Asaas e sua API, além disso também interagi com a transportadora a cada pedido que é feito." techs={[paths.html , paths.css , paths.php]} link="https://closetmed.com.br/" repo="https://github.com/fatekkl/Portfolio"/>
             </div>
         </section>
 

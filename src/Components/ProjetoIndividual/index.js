@@ -16,6 +16,7 @@ const ProjetoIndividual = (props) => {
             </div>
             <div className='button-container'>
                 <a target='_blank' rel='noopener noreferrer' href={props.link} className='preview-button'><img alt='linksymbol' src='./assets/linklogo.png' />Preview</a>
+                
                 <a target='_blank' rel='noopener noreferrer' href={props.repo} className='repo-button'><img id='gitimg' alt='github' src='./assets/github.png' />Code</a>
             </div>
         </div>
