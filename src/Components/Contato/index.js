@@ -3,7 +3,7 @@ import './Contato.css'
 
 const Contato = () => {
     return (
-        <section className='container'>
+        <section className='container-contato'>
             
         </section>
     )

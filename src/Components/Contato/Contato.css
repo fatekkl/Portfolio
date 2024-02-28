@@ -1,5 +1,4 @@
-.container {
-    height: 25rem;
-    border-top: 4px solid var();
-    background-color: var(--fonte-escura-bg);
+.container-contato {
+    height: 30rem;
+    background-color: var(--font-color-cinza);
 }
