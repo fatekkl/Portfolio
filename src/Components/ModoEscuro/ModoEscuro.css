@@ -68,7 +68,7 @@
  }
 
  .inputclass:checked + label .ball {
-    transform: translateX(12px);
+    transform: translateX(16px);
 }
 }
 
