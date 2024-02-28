@@ -1,3 +1,5 @@
+/* PROJETO CONTAINER */
+
 .project {
     width: 400px;
     height: 300px;
@@ -38,6 +40,11 @@
     transition: 0.3s;
 }
 
+/* PROJETO CONTAINER */
+
+
+/* CONTAINER TECHS DOS PROJETOS */
+
 .mini-container {
     display: flex;
     justify-content: flex-start;
@@ -51,6 +58,11 @@
     transition: 1s;
     filter: saturate(0);
 }
+
+/* CONTAINER TECHS DOS PROJETOS */
+
+
+/* BOTÕES LINKS PROJETOS */
 
 .button-container {
     display: flex;
@@ -118,6 +130,25 @@
     width: 25px;
     filter: saturate(0);
 }
+
+/* BOTÕES PROJETOS */
+
+/* DARK MODE */
+
+.project.dark {
+    border-color: var(--fonte-primaria-escura);
+}
+
+.project.dark .repo-button {
+    border-color: var(--fonte-primaria-escura);
+}
+
+.project.dark .preview-button {
+    background-color: var(--fonte-secundaria-escura);
+    border-color: var(--fonte-secundaria-escura);
+}
+
+/* DARK MODE */
 
 
 /* RESPONSIVIDADE */
