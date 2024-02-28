@@ -58,14 +58,14 @@
 .container-projects {
     width: 100%;
     margin: 5% 10%;
-    gap: 32px;
+    gap: 64px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 
-@media (max-width: 1040px) and (min-width: 350px) {
+@media (max-width: 1640px) and (min-width: 350px) {
 
     .container-section {
         height: 70rem;
