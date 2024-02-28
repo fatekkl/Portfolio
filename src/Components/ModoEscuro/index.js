@@ -23,7 +23,7 @@ const ModoEscuro = () => {
     
             const botaodark = document.querySelector('#label')
     
-            const projects = document.querySelectorAll('.projects')
+            const projects = document.querySelectorAll('.project')
     
             const mainh1 = document.querySelector('#h1html')
             const gitimg = document.querySelectorAll('#gitimg')

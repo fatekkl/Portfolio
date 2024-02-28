@@ -73,12 +73,15 @@
 
     .container-projects {
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        gap: 80px
+        gap: 80px;
+        margin-left: 0%;
+        margin-right: 2rem;
     };
 
     .container-techs img {
-        margin-left: 2rem;
+        margin-left: 0rem;
         width: 90px;
         height: 30px;
         align-items: center;
