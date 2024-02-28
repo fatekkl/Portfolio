@@ -16,6 +16,7 @@ function Projetos() {
     }
     return (
         <section id='section-projetos' className='container-section'>
+            <div className='background-box'><span>Conheça <strong>meus</strong> projetos<strong>.</strong></span></div>
             <div className='container-techs'>
                 <img alt='badge' src="./assets/reactbadge.png" />
                 <img alt='badge' src='./assets/jsbadge.png' />

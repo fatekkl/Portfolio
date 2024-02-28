@@ -7,6 +7,7 @@
     border-radius: 15px;
     color: var(--font-color-cinza);
     flex-wrap: wrap;
+    transition: 0.5s;
 }
 
 .project:hover p {
@@ -116,6 +117,10 @@
     scale: 1.03;
 }
 
+
+.project:hover {
+    box-shadow: 0px 5px 15px rgba(128, 128, 128, 0.6);
+}
 
 
 .repo-button:hover img {
