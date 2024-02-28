@@ -60,6 +60,20 @@
     letter-spacing: 4px;
 }
 
+.background-box.dark {
+    background-color: var(--fonte-primaria-escura);
+}
+
+.background-box.dark span {
+    filter: brightness(0.9);
+}
+
+.background-box.dark strong {
+    color: var(--fonte-escura-bg);
+    filter: saturate(1.0);
+    filter: opacity(0.9);
+}
+
 .background-box strong {
     color: var(--fonte-secundaria-clara);
     filter: saturate(0.5);

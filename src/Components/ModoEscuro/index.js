@@ -24,6 +24,8 @@ const ModoEscuro = () => {
             const botaodark = document.querySelector('#label')
     
             const projects = document.querySelectorAll('.project')
+
+            const backgrounditem = document.querySelector(".background-box")
     
             const mainh1 = document.querySelector('#h1html')
             const gitimg = document.querySelectorAll('#gitimg')
@@ -37,6 +39,7 @@ const ModoEscuro = () => {
                 sectionprojetos,
                 section2,
                 botaodark,
+                backgrounditem
             ]
     
             if (isCheck === "on") {
