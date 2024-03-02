@@ -1,4 +1,81 @@
 .container-contato {
-    height: 30rem;
-    background-color: var(--font-color-cinza);
+    height: 60rem;
+}
+
+.container-contato h1 {
+    font-family: "Exo", sans-serif;
+    margin-top: 3%;
+    margin-left: 6%;
+    font-weight: 700;
+    border-bottom: 8px solid var(--fonte-primaria-clara);
+    text-align: center;
+    font-size: 34px;
+    width: 160px;
+}
+
+
+.container-div-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.container-div-img img {
+   width: 40%;
+   height: 40%;
+}
+
+.container-copys {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    width: 100%;
+    height: 20rem;
+}
+
+.container-copys h2{
+    text-align: center;
+    font-size: 32px;
+    border-bottom: solid;
+    border-width: 4px;
+    letter-spacing: 4px;
+    padding-bottom: 10px;
+    border-image: linear-gradient(90deg, var(--fonte-primaria-clara), var(--fonte-escura-bg)) 1
+}
+
+
+.clickcopy {
+    display: flex;
+    align-items: center;
+    gap: 68px;
+    width: 570px;
+    height: 68px;
+    border: 4px solid var(--fonte-secundaria-clara);
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 2%;
+    background-color: var(--fonte-primaria-clara);
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border-right: 3px solid #000;
+}
+
+.clickcopy span {
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+.icon img {
+    width: 25px;
+    height: 20px;
 }
