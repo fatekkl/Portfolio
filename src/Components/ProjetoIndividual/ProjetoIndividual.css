@@ -91,7 +91,7 @@
     align-items: center;
     background-color: var(--font-color-cinza);
     transition: 0.8s;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .imagem-project img {

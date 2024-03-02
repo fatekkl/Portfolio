@@ -31,6 +31,7 @@ const ModoEscuro = () => {
             const gitimg = document.querySelectorAll('#gitimg')
             const instaimg = document.querySelector('#instaimg')
             const linkedinimg = document.querySelector('#linkedinimg')
+            const projectimg = document.querySelectorAll("#project-img")
     
             const array = [
                 headerid,
@@ -55,6 +56,9 @@ const ModoEscuro = () => {
                 gitimg.forEach((imagem) => {
                     imagem.setAttribute('src', '/assets/githubdark.png')
                 })
+                projectimg.forEach((imagem) => {
+                    imagem.setAttribute("src" , "./assets/project-dark-img.png")
+                })
     
                 projects.forEach((item) => {
                     item.classList.add("dark")
@@ -72,6 +76,10 @@ const ModoEscuro = () => {
                 linkedinimg.setAttribute('src', '/assets/linkedin.png')
                 gitimg.forEach((imagem) => {
                     imagem.setAttribute('src', '/assets/github.png')
+                })
+
+                projectimg.forEach((imagem) => {
+                    imagem.setAttribute("src" , "./assets/project-ligth-img.png")
                 })
 
                 projects.forEach((item) => {

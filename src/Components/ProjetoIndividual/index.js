@@ -6,7 +6,7 @@ const ProjetoIndividual = (props) => {
     return (
         <div className='project'>
             <div className="imagem-project">
-                <img alt="Ilustration"src="./assets/project-ligth-img.png"/>
+                <img id="project-img" alt="Ilustration"src="./assets/project-ligth-img.png"/>
             </div>
             <div className="project-content">
                 <h1>{props.title}</h1>
