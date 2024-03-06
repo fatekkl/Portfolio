@@ -172,10 +172,6 @@ body::-webkit-scrollbar{
         box-shadow: inset 0px 0px 15px;
     }
     
-    .Layout.dark .LayoutTextos p {
-        border-left: var(--fonte-primaria-escura) solid;
-    }
-    
     .Layout.dark .LayoutTextos strong {
         color: var(--fonte-primaria-escura);
     }
