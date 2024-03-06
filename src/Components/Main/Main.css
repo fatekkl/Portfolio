@@ -44,7 +44,6 @@ body::-webkit-scrollbar{
 }
 
 .LayoutTextos p{
-    border-left: var(--fonte-secundaria-clara) solid;
     flex-wrap: wrap;
     max-width: 50%;
     padding: 1%;
