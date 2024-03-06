@@ -54,10 +54,11 @@
     gap: 8px;
     width: 30rem;
     height: 68px;
-    border: 4px solid var(--fonte-secundaria-clara);
     border-radius: 20px;
-    padding: 5px;
+    padding: 2px;
+    box-shadow: 2px 2px 4px rgba(0, 0 , 0, 0.2);
     background-color: var(--fonte-primaria-clara);
+    cursor: pointer;
 }
 
 .icon {
@@ -66,18 +67,39 @@
     align-items: center;
     width: 60px;
     height: 20px;
-    border-right: 2px solid #000;
+    border-right: 2px solid #fff;
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+
+.clickcopy:hover .icon {
+    opacity: 1.0;
 }
 
 .clickcopy span {
     font-size: 22px;
+    color: var(--font-color-cinza);
+    opacity: 0.8;
     letter-spacing: 2px;
     font-family: "Roboto", sans-serif;
+    transition: 0.2s;
+    user-select: none;
+}
+
+
+.clickcopy:hover span {
+    opacity: 1.0;
+}
+
+.copygreen {
+    color: green;
 }
 
 .icon img {
     width: 25px;
-    height: 20px;
+    height: 25px;
+    opacity: 0.8;
 }
 
 @media (max-width: 1024px) and (min-width: 350px) {

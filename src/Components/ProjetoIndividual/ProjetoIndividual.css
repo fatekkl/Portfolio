@@ -1,10 +1,12 @@
 /* PROJETO CONTAINER */
 
 .project-content {
-    transform: rotateX(90deg);
+    transform: rotateX(180deg);
+    opacity: 0;
     transform-origin: bottom;
-    transition: all 0.s;
     gap: 4px;
+    transition: 0.6s;
+    z-index: 2;
 }
 
 
@@ -73,8 +75,8 @@
 }
 
 .project:hover .project-content {
-    transition-delay: 0.4s;
     transform: rotateX(0deg);
+    opacity: 1;
 }
 
 
@@ -90,8 +92,9 @@
     justify-content: center;
     align-items: center;
     background-color: var(--font-color-cinza);
-    transition: 0.8s;
+    transition: 0.6s;
     border-radius: 10px;
+    transform-origin: bottom;
 }
 
 .imagem-project img {

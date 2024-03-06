@@ -36,7 +36,7 @@
     font-family: 'Exo', sans-serif;
     transition: all 1s; 
     border-bottom-right-radius: 5px;
-    max-width: 60%;
+    max-width: 30%;
 }
 
 .Secao2:hover h1 {
@@ -67,8 +67,7 @@
     width: 20rem;
     border-radius: 100px;
     border: var(--fonte-primaria-clara) solid 4px;
-    animation: float 2.2s infinite;
-    transition: all 1s ease-in-out ;
+    animation: float 2.8s infinite;
 }
 
 /* ANIMAÇÃO DA FOTO */
@@ -112,10 +111,11 @@
 
     .SobreMim h1 {
         margin: 5% 2% 2% 0%;
-        font-size: 1.2rem;
+        font-size: 16px;
         flex-wrap: nowrap;
         text-align: center;
         border-bottom: 8px solid var(--fonte-primaria-clara);
+        max-width: 40%;
     }
 
     .Secao2:hover h1 {
