@@ -28,19 +28,19 @@ const Contato = () => {
         <section className='container-contato'>
             <h1 id='contatoh1' className='h1contato'>Contato</h1>
             <div className='container-div-img'>
-                <img id='contatoimg' alt='envelope' src='./assets/Contato.png' />
+                <img id='contatoimg' alt='email' src='./assets/Contato.png' />
             </div>
             <div className='container-copys'>
                 <h2 id='contatoh2' className='h2contato'>Fale comigo clicando no texto abaixo!</h2>
                 <div className='clickcopy'>
                     <div className='icon'>
-                        <img alt='email' src='./assets/envelope.png' />
+                        <img alt='email' src='./assets/email.png' />
                     </div>
                     <span onClick={copy}>mathtml.1105@gmail.com</span>
                 </div>
                 <div className='clickcopy'>
                     <div className='icon'>
-                        <img alt='envelope' src='./assets/whatsappbadge.png' />
+                        <img alt='email' src='./assets/whatsappbadge.png' />
                     </div>
                     <span onClick={copy2}>{"(11) 98753-9647"}</span>
                 </div>

@@ -22,7 +22,7 @@ const LayoutPrincipal = () => {
                 </a>
             </div>
             <div className='container-techs'>
-            <h1>Stacks</h1>
+            <h1>Stacks</h1> 
                 <img alt='badge' src="./assets/reactbadge.png" />
                 <img alt='badge' src='./assets/jsbadge.png' />
                 <img alt='badge' src='./assets/nodebadge.png' />
