@@ -3,14 +3,22 @@ import './Contato.css'
 
 const Contato = () => {
 
-    function copy (event)  {
-        const target = event.target.textContent
-        const prevTarget = event.target.textContent
-        navigator.clipboard.writeText(target)
+    function copy2(event) {
+        navigator.clipboard.writeText("(11) 98753-9647")
         event.target.textContent = "COPIADO COM SUCESSO!"
         event.target.style.color = "#1AFB47"
         setTimeout(() => {
-            event.target.textContent = prevTarget
+            event.target.textContent = "(11) 98753-9647"
+            event.target.style.color = "#fafafa"
+        }, 400)
+    }
+
+    function copy(event) {
+        navigator.clipboard.writeText("mathtml.1105@gmail.com")
+        event.target.textContent = "COPIADO COM SUCESSO!"
+        event.target.style.color = "#1AFB47"
+        setTimeout(() => {
+            event.target.textContent = "mathtml.1105@gmail.com"
             event.target.style.color = "#fafafa"
         }, 400)
 
@@ -18,12 +26,12 @@ const Contato = () => {
 
     return (
         <section className='container-contato'>
-            <h1>Contato</h1>
+            <h1 id='contatoh1' className='h1contato'>Contato</h1>
             <div className='container-div-img'>
-                <img alt='envelope' src='./assets/Contato.png' />
+                <img id='contatoimg' alt='envelope' src='./assets/Contato.png' />
             </div>
             <div className='container-copys'>
-                <h2>Fale comigo clicando no texto abaixo!</h2>
+                <h2 id='contatoh2' className='h2contato'>Fale comigo clicando no texto abaixo!</h2>
                 <div className='clickcopy'>
                     <div className='icon'>
                         <img alt='email' src='./assets/envelope.png' />
@@ -32,9 +40,9 @@ const Contato = () => {
                 </div>
                 <div className='clickcopy'>
                     <div className='icon'>
-                        <img alt='envelope' src='./assets/envelope.png' />
+                        <img alt='envelope' src='./assets/whatsappbadge.png' />
                     </div>
-                    <span onClick={copy}>mathtml.1105@gmail.com</span>
+                    <span onClick={copy2}>{"(11) 98753-9647"}</span>
                 </div>
             </div>
         </section>

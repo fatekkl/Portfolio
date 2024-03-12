@@ -143,11 +143,11 @@
 
         .Secao2.dark {
             border-top: var(--fonte-secundaria-escura) 8px solid;
-            background-color: var(--fonte-escura-bg);
+            background-color: var(--fonte-background-escura);
         }
         
         .Secao2.dark .SobreMim h1 {
-            border-color: var(--fonte-primaria-escura);
+            border-color: var(--fonte-secundaria-escura);
             color: var(--font-color-cinza);
         }
         

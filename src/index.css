@@ -1,11 +1,11 @@
 :root {
   --fonte-primaria-clara: #8AAAE5;
   --fonte-secundaria-clara: #365486;
-  --fonte-primaria-escura: #E04D01;
-  --fonte-secundaria-escura:  #FF7700;
+  --fonte-primaria-escura: #903749;
+  --fonte-secundaria-escura:  #E84545;
   --font-color-cinza: #fafafa;
-  --fonte-escura-bg: #2A2550;
-  --fonte-escura-bg2: #251D3A;
+  --fonte-background-escura: #2B2E4A;
+  --fonte-background-clara: #000000;
 }
 
 body {

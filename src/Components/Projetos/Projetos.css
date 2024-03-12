@@ -9,37 +9,18 @@
         inset -50px -50px 50px rgba(255, 255, 255, 0.01),
         inset 50px 50px 50px rgba(0,0,0,0.2);
     border-top: var(--fonte-primaria-clara) solid 6px;
-    border-bottom: var(--fonte-primaria-clara) solid 6px;
+    border-bottom: var(--fonte-primaria-clara) groove  8px;
  }
 
 
 /* CONTAINER DAS IMAGENS DE TECNOLOGIAS */
 
-.container-techs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-}
-
-
-
-/* IMAGENS TECNOLOGIAS */
-
-.container-techs img {
-    margin-left: 2rem;
-    width: 40px;
-    height: 40px;
-    align-items: center;
-    opacity: 0.7;
-    transition: all 0.5s linear;
-}
 
 
 .background-box {
     position: absolute;
     margin-left: 2%;
-    top: 96rem;
+    top: 92rem;
     display: flex;
     width: 650px;
     height: 90px;
@@ -54,39 +35,34 @@
     letter-spacing: 4px;
 }
 
-.background-box.dark {
-    background-color: var(--fonte-primaria-escura);
+
+
+.background-box strong {
+    color: var(--fonte-secundaria-clara);
+    filter: saturate(0.5);
+}
+/* DARK MODE */
+.container-section.dark {
+    background-color: var(--fonte-background-escura);
+    border-color: var(--fonte-secundaria-escura);
 }
 
 .background-box.dark span {
     filter: brightness(0.9);
 }
 
+.background-box.dark {
+    background-color: var(--fonte-primaria-escura);
+}
+
+
 .background-box.dark strong {
-    color: var(--fonte-escura-bg);
+    color: var(--fonte-background-escura);
     filter: saturate(1.0);
     filter: opacity(0.9);
 }
 
-.background-box strong {
-    color: var(--fonte-secundaria-clara);
-    filter: saturate(0.5);
-}
-
-/* IMAGENS TECNOLOGIAS */
-
-
-.container-techs img:hover {
-    opacity: 1.0;
-    scale: 1.4;
-    filter: contrast(1.5);
-    transition: all 0.5s linear;
-}
-/* DARK MODE */
-.container-section.dark {
-    background-color: var(--fonte-escura-bg2);
-    border-color: var(--fonte-primaria-escura);
-}
+/* PROJETOS */
 
 .container-projects {
     width: 100%;

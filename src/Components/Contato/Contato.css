@@ -2,15 +2,19 @@
     width: 100%;
 }
 
-.container-contato h1 {
+.h1contato {
     font-family: "Exo", sans-serif;
-    margin-top: 3%;
     margin-left: 6%;
+    padding-top: 3%;
     font-weight: 700;
     border-bottom: 4px solid var(--fonte-primaria-clara);
     text-align: center;
     font-size: 26px;
     max-width: 120px;
+}
+
+.h1contato.dark {
+    border-color: var(--fonte-escura-bg);
 }
 
 
@@ -36,14 +40,18 @@
     height: 20rem;
 }
 
-.container-copys h2{
+.h2contato {
     text-align: center;
     font-size: 32px;
     border-bottom: solid;
     border-width: 4px;
     letter-spacing: 4px;
     padding-bottom: 10px;
-    border-image: linear-gradient(90deg, var(--fonte-primaria-clara), var(--fonte-escura-bg)) 1
+    border-image: linear-gradient(90deg, var(--fonte-primaria-clara), var(--fonte-escura-bg)) 1;
+}
+
+.h2contato.dark {
+    border-image: linear-gradient(90deg, var(--fonte-escura-bg), var(--fonte-escura-bg2)) 1;
 }
 
 
@@ -59,6 +67,10 @@
     box-shadow: 2px 2px 4px rgba(0, 0 , 0, 0.2);
     background-color: var(--fonte-primaria-clara);
     cursor: pointer;
+}
+
+.clickcopy.dark {
+    background-color: var(--fonte-escura-bg);
 }
 
 .icon {
@@ -84,7 +96,6 @@
     letter-spacing: 2px;
     font-family: "Roboto", sans-serif;
     transition: 0.2s;
-    user-select: none;
 }
 
 

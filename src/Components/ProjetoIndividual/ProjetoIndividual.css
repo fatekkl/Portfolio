@@ -1,12 +1,11 @@
 /* PROJETO CONTAINER */
 
 .project-content {
-    transform: rotateX(180deg);
+    transform: rotateX(90deg);
     opacity: 0;
     transform-origin: bottom;
     gap: 4px;
     transition: 0.6s;
-    z-index: 2;
 }
 
 
