@@ -54,7 +54,7 @@ const ModoEscuro = () => {
                 mainh1.innerHTML = 'Web<br/> <strong> Developer </strong>🍎'
                 instaimg.setAttribute('src', '/assets/instagramdark.png')
                 linkedinimg.setAttribute('src', '/assets/linkedindark.png')
-                // contato.setAttribute("src" , "assets/contatodark.png")
+                contato.setAttribute("src" , "assets/contatodark.png")
                 gitimg.forEach((imagem) => {
                     imagem.setAttribute('src', '/assets/githubdark.png')
                 })
@@ -79,7 +79,7 @@ const ModoEscuro = () => {
                 mainh1.innerHTML = 'Web<br/> <strong> Developer </strong> 🧊'
                 instaimg.setAttribute('src', '/assets/instagram.png')
                 linkedinimg.setAttribute('src', '/assets/linkedin.png')
-                // contato.setAttribute("src" , "./assets/contato.png")
+                contato.setAttribute("src" , "./assets/contato.png")
                 gitimg.forEach((imagem) => {
                     imagem.setAttribute('src', '/assets/github.png')
                 })
