@@ -9,7 +9,7 @@ const Contato = () => {
         event.target.style.color = "#1AFB47"
         setTimeout(() => {
             event.target.textContent = "(11) 98753-9647"
-            event.target.style.color = "#fafafa"
+            event.target.style.color = "#2B2E4A"
         }, 400)
     }
 
@@ -19,7 +19,7 @@ const Contato = () => {
         event.target.style.color = "#1AFB47"
         setTimeout(() => {
             event.target.textContent = "mathtml.1105@gmail.com"
-            event.target.style.color = "#fafafa"
+            event.target.style.color = "#2B2E4A"
         }, 400)
 
     }

@@ -14,7 +14,7 @@
 }
 
 .h1contato.dark {
-    border-color: var(--fonte-escura-bg);
+    border-color: var(--fonte-secundaria-escura);
 }
 
 
@@ -47,11 +47,11 @@
     border-width: 4px;
     letter-spacing: 4px;
     padding-bottom: 10px;
-    border-image: linear-gradient(90deg, var(--fonte-primaria-clara), var(--fonte-escura-bg)) 1;
+    border-image: linear-gradient(90deg, var(--fonte-primaria-clara), var(--fonte-background-escura)) 1;
 }
 
 .h2contato.dark {
-    border-image: linear-gradient(90deg, var(--fonte-escura-bg), var(--fonte-escura-bg2)) 1;
+    border-image: linear-gradient(90deg, var(--fonte-background-escura), var(--fonte-primaria-escura)) 1;
 }
 
 
@@ -91,7 +91,7 @@
 
 .clickcopy span {
     font-size: 22px;
-    color: var(--font-color-cinza);
+    color: var(--fonte-background-escura);
     opacity: 0.8;
     letter-spacing: 2px;
     font-family: "Roboto", sans-serif;
