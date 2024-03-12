@@ -28,7 +28,6 @@ const Contato = () => {
         <section className='container-contato'>
             <h1 id='contatoh1' className='h1contato'>Contato</h1>
             <div className='container-div-img'>
-                <img id='contatoimg' alt='email' src='./assets/contato.png' />
             </div>
             <div className='container-copys'>
                 <h2 id='contatoh2' className='h2contato'>Fale comigo clicando no texto abaixo!</h2>
