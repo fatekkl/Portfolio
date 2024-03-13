@@ -3,6 +3,7 @@ import LayoutHeader from "./Components/Header";
 import SobreMim from "./Components/SobreMim";
 import Projetos from "./Components/Projetos";
 import Contato from "./Components/Contato";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
     <SobreMim/>
     <Projetos/>
     <Contato/>
+    <Footer/>
     </>
   );
 

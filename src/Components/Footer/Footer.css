@@ -1,0 +1,10 @@
+
+
+footer {
+    margin-top: 6.25rem;
+    height: 10rem;
+    background-color: var(--fonte-primaria-clara);
+    background-image: url(/public/assets/background.png);
+    background-size: cover no-repeat;
+    background-position: center center;
+}

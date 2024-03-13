@@ -4,6 +4,9 @@
 .container-section {
     display: flex;
     background-color: var(--fonte-background-escura);
+    background-image: url(/public/assets/background.png);
+    background-size: cover no-repeat;
+    background-position: center center;
     height: 60rem;
     box-shadow: 
         inset -50px -50px 50px rgba(255, 255, 255, 0.01),

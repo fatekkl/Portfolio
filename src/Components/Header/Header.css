@@ -3,6 +3,9 @@
 
 .header {
     background-color: var(--fonte-secundaria-clara);
+    background-image: url(/public/assets/background.png);
+    background-size: cover no-repeat;
+    background-position: center center;
     border-bottom: solid var(--fonte-primaria-clara) 4px;
     height: 4rem;
     display: flex;
