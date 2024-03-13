@@ -78,6 +78,7 @@ const ModoEscuro = () => {
                 mainh1.innerHTML = 'Web<br/> <strong> Developer </strong> 🧊'
                 instaimg.setAttribute('src', '/assets/instagram.png')
                 linkedinimg.setAttribute('src', '/assets/linkedin.png')
+                contato.setAttribute("src" , "/assets/Contato.png")
                 gitimg.forEach((imagem) => {
                     imagem.setAttribute('src', '/assets/github.png')
                 })
