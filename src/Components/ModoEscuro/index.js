@@ -19,7 +19,7 @@ const ModoEscuro = () => {
             const botaodark = document.querySelector('#label')
             const projects = document.querySelectorAll('.project')
             const backgrounditem = document.querySelector(".background-box")
-            const contato = document.querySelector("#contatoimg")
+            // const contato = document.querySelector("#contatoimg")
 
             const mainh1 = document.querySelector('#h1html')
             const gitimg = document.querySelectorAll('#gitimg')
@@ -54,7 +54,6 @@ const ModoEscuro = () => {
                 mainh1.innerHTML = 'Web<br/> <strong> Developer </strong>🍎'
                 instaimg.setAttribute('src', '/assets/instagramdark.png')
                 linkedinimg.setAttribute('src', '/assets/linkedindark.png')
-                contato.setAttribute("src" , "../../../assets/contatodark.png")
                 gitimg.forEach((imagem) => {
                     imagem.setAttribute('src', '/assets/githubdark.png')
                 })
@@ -79,7 +78,6 @@ const ModoEscuro = () => {
                 mainh1.innerHTML = 'Web<br/> <strong> Developer </strong> 🧊'
                 instaimg.setAttribute('src', '/assets/instagram.png')
                 linkedinimg.setAttribute('src', '/assets/linkedin.png')
-                contato.setAttribute("src" , "./assets/contato.png")
                 gitimg.forEach((imagem) => {
                     imagem.setAttribute('src', '/assets/github.png')
                 })
