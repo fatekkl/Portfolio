@@ -70,7 +70,7 @@
 }
 
 .clickcopy.dark {
-    background-color: var(--fonte-escura-bg);
+    background-color: var(--fonte-secundaria-escura);
 }
 
 .icon {
@@ -91,7 +91,7 @@
 
 .clickcopy span {
     font-size: 22px;
-    color: var(--fonte-background-escura);
+    color: var(--font-color-cinza);
     opacity: 0.8;
     letter-spacing: 2px;
     font-family: "Roboto", sans-serif;
