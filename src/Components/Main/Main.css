@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     user-select: none;
+    text-decoration: none;
 }
 
 body::-webkit-scrollbar {

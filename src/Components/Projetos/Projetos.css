@@ -9,8 +9,7 @@
     background-position: center center;
     height: 60rem;
     box-shadow: 
-        inset -50px -50px 50px rgba(255, 255, 255, 0.01),
-        inset 50px 50px 50px rgba(0,0,0,0.2);
+        inset 50px 50px 250px rgba(0, 0, 0, 0.6);
     border-top: var(--fonte-primaria-clara) solid 6px;
     border-bottom: var(--fonte-primaria-clara) groove  8px;
  }
