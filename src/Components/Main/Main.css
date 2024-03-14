@@ -42,7 +42,7 @@ body::-webkit-scrollbar {
 .Layout span {
     font-size: 20px;
     font-family: 'Exo', sans-serif;
-    font-weight: 750;
+    font-weight: 850;
     margin-left: 4%;
 }
 
@@ -51,7 +51,8 @@ body::-webkit-scrollbar {
     max-width: 55%;
     margin-left: 3%;
     font-size: 18px;
-    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
 }
 
 .LayoutTextos strong {
@@ -67,7 +68,6 @@ body::-webkit-scrollbar {
 .container-techs {
     position: absolute;
     display: flex;
-    width: 100px;
     padding: 15px;
     justify-content: center;
     flex-direction: column;
@@ -209,7 +209,7 @@ body::-webkit-scrollbar {
         align-items: center;
         flex-direction: row;
         gap: 8px;
-        margin-bottom: 20%;
+        margin-bottom: 40%;
     }
     
     .container-techs h1 {

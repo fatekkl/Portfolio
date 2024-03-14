@@ -31,15 +31,22 @@
 /* TEXTOS  */
 
 .SobreMim h1 {
-    display: flex;
-    justify-content: right;
+    text-align: right;
     border-bottom: var(--fonte-primaria-clara) 8px solid;
-    margin: 10% 0% 5% 1em;
-    font-size: 26px;
+    margin: 10% 5% 2%;
+    font-size: 32px;
     font-family: 'Exo', sans-serif;
     transition: all 1s; 
     border-bottom-right-radius: 5px;
-    max-width: 30%;
+    max-width: 35%;
+}
+
+.SobreMim h2 {
+    margin: 5% 5% 2%;
+    font-family: "Exo" , sans-serif;
+    font-weight: normal;
+    color: #B7C9F2;
+    filter: drop-shadow( var(--font-color-cinza) 0.0625rem 0.0625rem 1.025rem);
 }
 
 .Secao2:hover h1 {
@@ -47,10 +54,9 @@
 }
 
 .SobreMim p {
-    font-family: 'Montserrat', sans-serif;
-    text-align: center; /* Centraliza o texto horizontalmente */
-    margin: 0 1rem; /* Margem à esquerda e à direita de 1rem */
-    padding: 10px;
+    font-family: 'Exo', sans-serif;
+    margin: 0 5%;
+    padding: 10px 0px;
     line-height: 1.5;
     font-size: 18px;
 }
