@@ -25,7 +25,7 @@
     display: flex;
     color: var(--font-color-cinza);
     flex-direction: column;
-    max-width: 50vw;
+    max-width: 70vw;
 }
 
 /* TEXTOS  */
@@ -91,6 +91,17 @@
 
 }
 
+@keyframes shake {
+    0% , 100% {
+        transform: translateX(8%);
+    }
+    50% {
+        transform: translateX(-8%);
+    }
+
+}
+
+
 /* ANIMAÇÃO DA FOTO */
 
 /* RESPONSIVIDADE */
@@ -108,6 +119,8 @@
     .SobreMim {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         padding: 20px;
         max-width: none;
     }
@@ -119,17 +132,16 @@
     }
 
     .SobreMim h1 {
-        margin: 5% 2% 2% 0%;
-        font-size: 16px;
+        font-size: 20px;
         flex-wrap: nowrap;
-        text-align: center;
+        text-align: right;
         border-bottom: 8px solid var(--fonte-primaria-clara);
-        max-width: 40%;
+        max-width: 100%;
     }
 
-    .Secao2:hover h1 {
-        max-width: 60%;
-     }
+    .SobreMim h2 {
+        font-size: 20px;
+    }
 
     .sobre-img {
         display: flex;
@@ -139,10 +151,13 @@
     }
 
     .sobre-img img{
-       width: 0px;
-       border: 0px;
+       width: 12rem;
+       height: 16rem;
+       animation: float 0s infinite;
+       animation: shake 4s infinite;
+       margin-bottom: 10%;
+       border-radius: 70px;
     }
-
 
 }
 
@@ -163,4 +178,8 @@
         .Secao2.dark .sobre-img img {
             border-color: var(--fonte-primaria-escura);
            
+        }
+
+        .Secao2.dark .SobreMim h2 {
+            color: var(--fonte-secundaria-escura);
         }

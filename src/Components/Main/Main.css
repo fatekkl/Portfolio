@@ -160,7 +160,7 @@ body::-webkit-scrollbar {
 
 /* RESPONSIVIDADE */
 
-@media (max-width: 1040px) and (min-width: 350px) {
+@media (max-width: 1020px) and (min-width: 350px) {
 
 
     .Layout {
@@ -172,6 +172,7 @@ body::-webkit-scrollbar {
     }
 
     .LayoutTextos h1 {
+        margin-top: 10%;
         text-align: center;
     }
 
