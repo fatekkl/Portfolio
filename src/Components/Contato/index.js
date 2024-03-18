@@ -9,7 +9,7 @@ const Contato = () => {
         event.target.style.color = "#1AFB47"
         setTimeout(() => {
             event.target.textContent = "(11) 98753-9647"
-            event.target.style.color = "#2B2E4A"
+            event.target.style.color = "#fafafa"
         }, 400)
     }
 
@@ -19,13 +19,13 @@ const Contato = () => {
         event.target.style.color = "#1AFB47"
         setTimeout(() => {
             event.target.textContent = "mathtml.1105@gmail.com"
-            event.target.style.color = "#2B2E4A"
+            event.target.style.color = "#fafafa"
         }, 400)
 
     }
 
     return (
-        <section className='container-contato'>
+        <section id='section-contato' className='container-contato'>
             <h1 id='contatoh1' className='h1contato'>Contato</h1>
             <div className='container-div-img'>
                 <img id='contatoimg' alt='email' src='/assets/Contato.png' />

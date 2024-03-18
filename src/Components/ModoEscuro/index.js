@@ -132,7 +132,9 @@ const ModoEscuro = () => {
         <div className='div-modoescuro'>
             <input onClick={setStrg} className='inputclass' type='checkbox' id='checkinput' />
             <label className='labelclasse' htmlFor='checkinput' id='label'>
-                <div className="ball"></div>
+                <div className="ball"/>
+                <p className='on'>ON</p>
+                <p className='off'>OFF</p>
             </label>
         </div>
     )

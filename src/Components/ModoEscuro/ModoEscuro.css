@@ -1,10 +1,8 @@
-
 /* CHECKBOX INVISIVEL */
 
-.div-modoescuro input{
+.div-modoescuro input {
     display: none;
     position: absolute;
-    width: 50px;
     opacity: 0;
 }
 
@@ -13,9 +11,8 @@
 
 /*  CHECKBOX VISIVEL */
 
-.labelclasse{
+.labelclasse {
     display: flex;
-    justify-content: space-between;
     background-color: var(--fonte-primaria-clara);
     border-radius: 50px;
     padding: 5px;
@@ -23,6 +20,28 @@
     height: 26px;
     cursor: pointer;
     align-items: center;
+}
+
+.on {
+    position: absolute;
+    font-family: "Exo" , sans-serif;
+    font-size: 12px;
+    color: var(--font-color-cinza);
+    transition: linear 0.6s;
+    opacity: 0;
+}
+
+.off {
+    font-family: "Exo" , sans-serif;
+    font-size: 12px;
+    position: absolute;
+    transform: translateX(26px);
+    color: var(--font-color-cinza);
+    transition: linear 0.6s;
+}
+
+.labelclasse.sticky {
+    display: none;
 }
 
 /*  CHECKBOX VISIVEL */
@@ -34,7 +53,6 @@
     border-radius: 50%;
     height: 24px;
     width: 24px;
-    position: absolute;
     transform: translateX(0px);
     transition: transform 0.6s linear;
 }
@@ -44,8 +62,16 @@
 
 /* ATUALIZA POSIÇÃO DA BOLINHA */
 
-.inputclass:checked + label .ball {
+.inputclass:checked+label .ball {
     transform: translateX(24px);
+
+}
+
+.inputclass:checked+label .on {
+    opacity: 1;
+}
+.inputclass:checked+label .off {
+    opacity: 0;
 }
 
 /* ATUALIZA POSIÇÃO DA BOLINHA */
@@ -53,23 +79,37 @@
 
 /* RESPONSIVIDADE */
 
-@media (max-width: 660px) and (min-width: 350px) {
+@media (max-width: 1040px) and (min-width: 350px) {
 
     .ball {
-    height: 19px;
-    width: 19px;
- }
+        height: 14px;
+        width: 14px;
+    }
 
- .labelclasse {
-    width: 36px;
-    height: 19px;
-    right: 3%;
-    top: 15%;
- }
+    .off {
+        opacity: 0;
+        position: absolute;
+    }
 
- .inputclass:checked + label .ball {
-    transform: translateX(16px);
-}
+    .on {
+        position: absolute;
+    }
+
+    .inputclass:checked+label .on {
+        opacity: 0;
+    }
+
+    .labelclasse {
+        width: 30px;
+        height: 14px;
+        position: absolute;
+        right: 1%;
+        top: 3%;
+    }
+
+    .inputclass:checked+label .ball {
+        transform: translateX(16px);
+    }
 }
 
 /* RESPONSIVIDADE */
@@ -77,10 +117,10 @@
 
 /* DARK MODE */
 
-     .labelclasse.dark {
-         background-color: var(--fonte-secundaria-escura);
-     }
-     
-     .labelclasse.dark .ball {
-         background-color: var(--font-color-cinza);
-     }
+.labelclasse.dark {
+    background-color: var(--fonte-secundaria-escura);
+}
+
+.labelclasse.dark .ball {
+    background-color: var(--font-color-cinza);
+}
