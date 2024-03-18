@@ -82,8 +82,8 @@
 @media (max-width: 1040px) and (min-width: 350px) {
 
     .ball {
-        height: 14px;
-        width: 14px;
+        height: 16px;
+        width: 16px;
     }
 
     .off {
@@ -100,15 +100,15 @@
     }
 
     .labelclasse {
-        width: 30px;
+        width: 24px;
         height: 14px;
         position: absolute;
-        right: 1%;
-        top: 3%;
+        right: 4.5%;
+        top: 4%;
     }
 
     .inputclass:checked+label .ball {
-        transform: translateX(16px);
+        transform: translateX(8px);
     }
 }
 

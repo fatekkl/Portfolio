@@ -76,16 +76,15 @@
         height: 4rem;
         display: flex;
         align-items: center;
-        justify-content: center;
-        padding: 0rem 0rem;
+        justify-content: left;
         transition: 0.7s;
         opacity: 1;
     }
 
     .container-nav {
         display: flex;
-        justify-content: center;
-        gap: 10px;
+        justify-content: left;
+        gap: 6px;
     }
 
     .container-nav a{
