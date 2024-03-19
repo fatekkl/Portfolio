@@ -4,6 +4,7 @@ import "./Footer.css"
 const Footer = () => {
     return (
         <footer>
+            <img className="dev-img" src="./assets/dev.png" alt="dev"/>
             <div className="container-h1">
                 <h1>2024 © Matheus Oliveira. Todos os direitos reservados.</h1>
             </div>
