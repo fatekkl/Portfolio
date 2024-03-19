@@ -18,13 +18,13 @@
 .header.sticky {
     z-index: 20;
     height: 2.225rem;
-    width: 100%;
     backdrop-filter: blur(0.4375rem);
     position: fixed;
     transition: 0.7s;
+    padding: 0.5rem 0.5rem;
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
+    width: 100vw;
     opacity: 0.925;
 }
 
