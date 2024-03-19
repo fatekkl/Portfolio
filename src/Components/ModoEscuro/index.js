@@ -20,11 +20,12 @@ const ModoEscuro = () => {
             const projects = document.querySelectorAll('.project')
             const backgrounditem = document.querySelector(".background-box")
             const contato = document.querySelector("#contatoimg")
+            const social = document.querySelector("#footer-social")
 
             const mainh1 = document.querySelector('#h1html')
             const gitimg = document.querySelectorAll('#gitimg')
-            const instaimg = document.querySelector('#instaimg')
-            const linkedinimg = document.querySelector('#linkedinimg')
+            const instaimg = document.querySelectorAll('#instaimg')
+            const linkedinimg = document.querySelectorAll('#linkedinimg')
             const projectimg = document.querySelectorAll("#project-img")
             const contatoh1 = document.querySelector("#contatoh1")
             const contatoh2 = document.querySelector("#contatoh2")
@@ -42,6 +43,7 @@ const ModoEscuro = () => {
                 contatoh1,
                 contatoh2,
                 containertech,
+                social,
             ]
 
             if (isCheck === "on") {
@@ -51,21 +53,29 @@ const ModoEscuro = () => {
                 })
 
                 mainh1.innerHTML = 'Web<br/> <strong> Developer </strong>🍎'
-                instaimg.setAttribute('src', '/assets/instagramdark.png')
-                linkedinimg.setAttribute('src', '/assets/linkedindark.png')
-                contato.setAttribute("src" , "/assets/Contatodark.png")
+                contato.setAttribute("src", "/assets/Contatodark.png")
                 gitimg.forEach((imagem) => {
                     imagem.setAttribute('src', '/assets/githubdark.png')
                 })
+
+                linkedinimg.forEach((imagem) => {
+                    imagem.setAttribute('src', '/assets/linkedindark.png')
+                })
+
                 projectimg.forEach((imagem) => {
                     imagem.setAttribute("src", "./assets/project-dark-img.png")
                 })
+
                 contatobotao.forEach((item) => {
                     item.classList.add("dark")
                 })
 
                 projects.forEach((item) => {
                     item.classList.add("dark")
+                })
+
+                instaimg.forEach((imagem) => {
+                    imagem.setAttribute('src', '/assets/instagramdark.png')
                 })
 
             } else {
@@ -76,11 +86,15 @@ const ModoEscuro = () => {
                 })
 
                 mainh1.innerHTML = 'Web<br/> <strong> Developer </strong> 🧊'
-                instaimg.setAttribute('src', '/assets/instagram.png')
-                linkedinimg.setAttribute('src', '/assets/linkedin.png')
-                contato.setAttribute("src" , "/assets/Contato.png")
+                contato.setAttribute("src", "/assets/Contato.png")
                 gitimg.forEach((imagem) => {
                     imagem.setAttribute('src', '/assets/github.png')
+                })
+                linkedinimg.forEach((imagem) => {
+                    imagem.setAttribute('src', '/assets/linkedin.png')
+                })
+                instaimg.forEach((imagem) => {
+                    imagem.setAttribute('src', '/assets/instagram.png')
                 })
 
                 projectimg.forEach((imagem) => {
@@ -132,7 +146,7 @@ const ModoEscuro = () => {
         <div className='div-modoescuro'>
             <input onClick={setStrg} className='inputclass' type='checkbox' id='checkinput' />
             <label className='labelclasse' htmlFor='checkinput' id='label'>
-                <div className="ball"/>
+                <div className="ball" />
                 <p className='on'>ON</p>
                 <p className='off'>OFF</p>
             </label>
