@@ -124,6 +124,10 @@ body::-webkit-scrollbar {
     margin-top: 1%;
 }
 
+.container-botao img {
+    width: 32px;
+}
+
 .container-botao a {
     display: flex;
     width: 300px;

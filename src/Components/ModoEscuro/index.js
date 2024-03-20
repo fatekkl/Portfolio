@@ -31,6 +31,7 @@ const ModoEscuro = () => {
             const contatoh2 = document.querySelector("#contatoh2")
             const contatobotao = document.querySelectorAll(".clickcopy")
             const containertech = document.querySelector(".container-techs")
+            const doc = document.querySelector("#doc")
 
             const array = [
                 headerid,
@@ -54,6 +55,7 @@ const ModoEscuro = () => {
 
                 mainh1.innerHTML = 'Web<br/> <strong> Developer </strong>🍎'
                 contato.setAttribute("src", "/assets/Contatodark.png")
+                doc.setAttribute("src" , "/assets/pdf.png")
                 gitimg.forEach((imagem) => {
                     imagem.setAttribute('src', '/assets/githubdark.png')
                 })
@@ -87,6 +89,7 @@ const ModoEscuro = () => {
 
                 mainh1.innerHTML = 'Web<br/> <strong> Developer </strong> 🧊'
                 contato.setAttribute("src", "/assets/Contato.png")
+                doc.setAttribute("src" , "/assets/pdf-claro.png" )
                 gitimg.forEach((imagem) => {
                     imagem.setAttribute('src', '/assets/github.png')
                 })
