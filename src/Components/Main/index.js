@@ -18,7 +18,7 @@ const LayoutPrincipal = () => {
                     <img id='gitimg' src="/assets/github.png" alt="ImagemGithub" />Github
                 </a>
                 <a href="https://drive.google.com/file/d/11Jogiptnz3uYLmApWsm1sEVw7634axIU/view?usp=sharing" target="_blank" rel='noopener noreferrer'>
-                    <img id='doc' src="/assets/pdf.png" alt="imagemdoc" />Curricúlo
+                    <img id='doc' src="/assets/pdf.png" alt="imagemdoc" />Currículo
                 </a>
             </div>
             <div className='container-techs'>
