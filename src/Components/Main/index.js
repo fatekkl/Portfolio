@@ -6,9 +6,9 @@ const LayoutPrincipal = () => {
         
         <main id='layout-main' className="Layout">
             <section id='txtlayout' className="LayoutTextos">
-                <h1 id='h1html'>Web<br /> <strong>Developer</strong>💧</h1>
+                <h1 id='h1html'>Web<br /> <strong>Developer</strong>🧊</h1>
                 <span>Oi, eu sou o Matheus. 👋</span>
-                <p>Seja muito bem-vindo ao meu portfólio, um espaço dedicado a compartilhar minha trajetória acadêmica e profissional, onde você terá acesso a informações detalhadas sobre diversos aspectos que compõem minha jornada. Explore os diferentes campos abaixo para descobrir mais sobre os projetos que realizei, as tecnologias que domino, minhas habilidades interpessoais e um vislumbre mais pessoal sobre quem sou.</p>
+                <p>Seja muito bem-vindo ao meu portfólio, um espaço dedicado a compartilhar minha trajetória acadêmica e profissional, onde você terá acesso a informações detalhadas sobre diversos aspectos que compõem minha jornada. Explore os diferentes campos abaixo para descobrir mais sobre os projetos que realizei, as tecnologias que domino, minhas habilidades pessoais e um vislumbre mais pessoal sobre quem sou.</p>
             </section>
             <div className="container-botao">
                 <a href="https://www.linkedin.com/in/fatekkl/" target='_blank' rel='noopener noreferrer'>
