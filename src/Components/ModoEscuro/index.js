@@ -6,11 +6,17 @@ const ModoEscuro = () => {
     const [isCheck, setisCheck] = useState('off')
     const strg = localStorage.getItem("Check") ? localStorage.getItem("Check") : localStorage.setItem("Check", isCheck)
 
+
+
+
+
+
+
+
+
     useEffect(() => {
         const checkbox = document.querySelector('#checkinput')
-
         const classhandle = () => {
-
             const headerid = document.querySelector('#headerid')
             const layoutmain = document.querySelector('#layout-main')
             const textlayout = document.querySelector('#txtlayout')
@@ -19,19 +25,11 @@ const ModoEscuro = () => {
             const botaodark = document.querySelector('#label')
             const projects = document.querySelectorAll('.project')
             const backgrounditem = document.querySelector(".background-box")
-            const contato = document.querySelector("#contatoimg")
             const social = document.querySelector("#footer-social")
-
-            const mainh1 = document.querySelector('#h1html')
-            const gitimg = document.querySelectorAll('#gitimg')
-            const instaimg = document.querySelectorAll('#instaimg')
-            const linkedinimg = document.querySelectorAll('#linkedinimg')
-            const projectimg = document.querySelectorAll("#project-img")
             const contatoh1 = document.querySelector("#contatoh1")
             const contatoh2 = document.querySelector("#contatoh2")
             const contatobotao = document.querySelectorAll(".clickcopy")
             const containertech = document.querySelector(".container-techs")
-            const doc = document.querySelector("#doc")
 
             const array = [
                 headerid,
@@ -53,21 +51,6 @@ const ModoEscuro = () => {
                     item.classList.add("dark")
                 })
 
-                mainh1.innerHTML = 'Web<br/> <strong> Developer </strong>🍎'
-                contato.setAttribute("src", "/assets/Contatodark.png")
-                doc.setAttribute("src" , "/assets/pdf.png")
-                gitimg.forEach((imagem) => {
-                    imagem.setAttribute('src', '/assets/githubdark.png')
-                })
-
-                linkedinimg.forEach((imagem) => {
-                    imagem.setAttribute('src', '/assets/linkedindark.png')
-                })
-
-                projectimg.forEach((imagem) => {
-                    imagem.setAttribute("src", "./assets/project-dark-img.png")
-                })
-
                 contatobotao.forEach((item) => {
                     item.classList.add("dark")
                 })
@@ -76,32 +59,12 @@ const ModoEscuro = () => {
                     item.classList.add("dark")
                 })
 
-                instaimg.forEach((imagem) => {
-                    imagem.setAttribute('src', '/assets/instagramdark.png')
-                })
 
             } else {
 
                 array.forEach((item) => {
                     item.classList.remove("dark")
 
-                })
-
-                mainh1.innerHTML = 'Web<br/> <strong> Developer </strong> 🧊'
-                contato.setAttribute("src", "/assets/Contato.png")
-                doc.setAttribute("src" , "/assets/pdf-claro.png" )
-                gitimg.forEach((imagem) => {
-                    imagem.setAttribute('src', '/assets/github.png')
-                })
-                linkedinimg.forEach((imagem) => {
-                    imagem.setAttribute('src', '/assets/linkedin.png')
-                })
-                instaimg.forEach((imagem) => {
-                    imagem.setAttribute('src', '/assets/instagram.png')
-                })
-
-                projectimg.forEach((imagem) => {
-                    imagem.setAttribute("src", "./assets/project-ligth-img.png")
                 })
 
                 contatobotao.forEach((item) => {
@@ -117,14 +80,76 @@ const ModoEscuro = () => {
 
         }
 
+        const imghandle = () => {
+            const contato = document.querySelector("#contatoimg")
+            const mainh1 = document.querySelector('#h1html')
+            const gitimg = document.querySelectorAll('#gitimg')
+            const instaimg = document.querySelectorAll('#instaimg')
+            const linkedinimg = document.querySelectorAll('#linkedinimg')
+            const projectimg = document.querySelectorAll("#project-img")
+            const doc = document.querySelector("#doc")
+
+
+
+            if (isCheck === "on") {
+                mainh1.innerHTML = 'Web<br/> <strong> Developer </strong>🍎'
+
+                contato.setAttribute("src", "/assets/Contatodark.png")
+
+                doc.setAttribute("src", "/assets/pdf.png")
+
+                gitimg.forEach((imagem) => {
+                    imagem.setAttribute('src', '/assets/githubdark.png')
+                })
+
+                linkedinimg.forEach((imagem) => {
+                    imagem.setAttribute('src', '/assets/linkedindark.png')
+                })
+
+                projectimg.forEach((imagem) => {
+                    imagem.setAttribute("src", "./assets/project-dark-img.png")
+                })
+
+                instaimg.forEach((imagem) => {
+                    imagem.setAttribute('src', '/assets/instagramdark.png')
+                })
+            } else {
+                mainh1.innerHTML = 'Web<br/> <strong> Developer </strong> 🧊'
+
+                contato.setAttribute("src", "/assets/Contato.png")
+
+                doc.setAttribute("src", "/assets/pdf-claro.png")
+
+                gitimg.forEach((imagem) => {
+                    imagem.setAttribute('src', '/assets/github.png')
+                })
+
+                linkedinimg.forEach((imagem) => {
+                    imagem.setAttribute('src', '/assets/linkedin.png')
+                })
+
+                instaimg.forEach((imagem) => {
+                    imagem.setAttribute('src', '/assets/instagram.png')
+                })
+
+                projectimg.forEach((imagem) => {
+                    imagem.setAttribute("src", "./assets/project-ligth-img.png")
+                })
+            }
+
+
+        }
+
         if (isCheck === "on") {
             setisCheck(strg)
             checkbox.checked = true
             classhandle()
+            imghandle()
         } else {
             setisCheck(strg)
             checkbox.checked = false
             classhandle()
+            imghandle()
         }
 
 
