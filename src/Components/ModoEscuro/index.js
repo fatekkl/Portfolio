@@ -6,14 +6,6 @@ const ModoEscuro = () => {
     const [isCheck, setisCheck] = useState('off')
     const strg = localStorage.getItem("Check") ? localStorage.getItem("Check") : localStorage.setItem("Check", isCheck)
 
-
-
-
-
-
-
-
-
     useEffect(() => {
         const checkbox = document.querySelector('#checkinput')
         const classhandle = () => {
@@ -88,8 +80,6 @@ const ModoEscuro = () => {
             const linkedinimg = document.querySelectorAll('#linkedinimg')
             const projectimg = document.querySelectorAll("#project-img")
             const doc = document.querySelector("#doc")
-
-
 
             if (isCheck === "on") {
                 mainh1.innerHTML = 'Web<br/> <strong> Developer </strong>🍎'
@@ -168,7 +158,6 @@ const ModoEscuro = () => {
         }
 
     }
-
 
     return (
         <div className='div-modoescuro'>
