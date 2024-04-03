@@ -17,7 +17,7 @@ const LayoutPrincipal = () => {
                 <a href="https://github.com/fatekkl" target="_blank" rel='noopener noreferrer'>
                     <img id='gitimg' src="/assets/github.png" alt="ImagemGithub" />Github
                 </a>
-                <a href="https://drive.google.com/file/d/11Jogiptnz3uYLmApWsm1sEVw7634axIU/view?usp=sharing" target="_blank" rel='noopener noreferrer'>
+                <a href="https://docs.google.com/document/d/1u4CmJWvBQvKz-KQDFK2sazFaaeu9mhHgTXI2lF24ZlI/edit?usp=sharing" target="_blank" rel='noopener noreferrer'>
                     <img id='doc' src="/assets/pdf.png" alt="imagemdoc" />Currículo
                 </a>
             </div>
