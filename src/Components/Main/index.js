@@ -3,10 +3,10 @@ import './Main.css'
 const LayoutPrincipal = () => {
 
     return (
-        
+
         <main id='layout-main' className="Layout">
             <section id='txtlayout' className="LayoutTextos">
-                <h1 id='h1html'>Web<br /> <strong>Developer</strong>🧊</h1>
+                <h1 id='h1html'>Web<br/> <strong>Developer</strong>🧊</h1>
                 <span>Oi, eu sou o Matheus. 👋</span>
                 <p>Seja muito bem-vindo ao meu portfólio, um espaço dedicado a compartilhar minha trajetória acadêmica e profissional, onde você terá acesso a informações detalhadas sobre diversos aspectos que compõem minha jornada. Explore os diferentes campos abaixo para descobrir mais sobre os projetos que realizei, as tecnologias que domino, minhas habilidades pessoais e um vislumbre mais pessoal sobre quem sou.</p>
             </section>
@@ -22,7 +22,7 @@ const LayoutPrincipal = () => {
                 </a>
             </div>
             <div className='container-techs'>
-            <h1>Stacks</h1> 
+                <h1>Stacks</h1>
                 <img alt='badge' src="./assets/reactbadge.png" />
                 <img alt='badge' src='./assets/jsbadge.png' />
                 <img alt='badge' src='./assets/nodebadge.png' />
