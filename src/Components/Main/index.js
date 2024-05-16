@@ -22,13 +22,12 @@ const LayoutPrincipal = () => {
                 </a>
             </div>
             <div className='container-techs'>
-                <h1>Stacks</h1>
                 <img alt='badge' src="./assets/reactbadge.png" />
                 <img alt='badge' src='./assets/jsbadge.png' />
                 <img alt='badge' src='./assets/nodebadge.png' />
                 <img alt='badge' src='./assets/gitbadge.png' />
-                <img alt='badge' src='./assets/cssbadge.png' />
-                <img alt='badge' src='./assets/htmlbadge.png' />
+                <img alt='badge' src='./assets/javabadge.png' />
+                <img alt='badge' src='./assets/kotlinbadge.png'/>
             </div>
         </main>
 
