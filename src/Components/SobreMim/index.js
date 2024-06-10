@@ -18,8 +18,8 @@ const SobreMim = () => {
           lógica, tais como algoritmos. Além disso, venho aprofundando meus
           conhecimentos em outras linguagens, como Java, TypeScript e,
           principalmente, Kotlin. Essa jornada de estudos me levou a explorar
-          também o campo dos bancos de dados, e recentemente tenho me dedicado
-          ao aprendizado de conteúdos relacionados à computação em nuvem,
+          também o campo dos bancos de dados(MySQL, SQLite e MongoDB), e recentemente tenho me dedicado
+          ao aprendizado de conteúdos relacionados à computação em nuvem(Google Cloud, Azure e AWS),
           buscando compreender o funcionamento de aplicações em grande escala.
         </p>
       </div>
