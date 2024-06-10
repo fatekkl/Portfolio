@@ -13,8 +13,10 @@ footer {
 }
 
 .dev-img {
-    width: 12rem;
-    height: 12rem;
+    padding-left: 10%;
+    width: 10rem;
+    height: 10rem;
+    opacity: 0.5;
 }
 
 
