@@ -8,9 +8,7 @@ const SobreMim = () => {
         <p>
           Meu nome é Matheus, tenho 18 anos e comecei meus estudos em
           programação no início de 2022. Quando comecei, meu primeiro contato
-          foi com Python e tenho certo conhecimento sobre a linguagem, porém
-          depois me foquei em JavaScript tanto para FrontEnd quanto para
-          BackEnd.
+          foi com Python e tenho certo conhecimento sobre a linguagem, porém atualmente meu foco é o JavaScript, seja utilizando React ou Nest.js.
         </p>
         <h2>O que faço atualmente?</h2>
         <p>

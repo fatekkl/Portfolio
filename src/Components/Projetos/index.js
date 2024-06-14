@@ -13,6 +13,7 @@ function Projetos() {
         css: "./assets/cssbadge.png",
         html: "./assets/htmlbadge.png",
         php: "./assets/phpbadge.png",
+        sqlite: "./assets/sqlitebadge.png"
     }
     return (
         <section id='section-projetos' className='container-section'>
@@ -25,7 +26,7 @@ function Projetos() {
 
                 <ProjetoIndividual title="Automação CRM" desc="Nesse projeto freelance, eu e outro desenvolvedor fizemos a automatização dos pedidos e da gestão da empresa, cada pedido feito é enviado para o serviço de gestão com todas as informações sobre o cliente." techs={[paths.node , paths.js]} link="https://ozonsolution.com/"/>
 
-                <ProjetoIndividual title="Lorem Ipsum" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare enim accumsan, condimentum tortor nec, ultrices eros. Donec sit amet posuere quam. Pellentesque id meturcu" techs={[paths.node , paths.js , paths.git]}/>
+                <ProjetoIndividual title="Node com Sequelize" desc="Nesse projeto pessoal, eu desenvolvi um sistema de classes baseado em uma escola e cursos, Utilizei Node e a biblioteca Sequelize para conectar com uma tabela sqlite, enviando, atualizando, deletando e lendo os dados." techs={[paths.node , paths.sqlite , paths.git]} link="https://github.com/fatekkl/NodeSequelize" repo="https://github.com/fatekkl/NodeSequelize"/>
             </div>
         </section>
 
