@@ -63,7 +63,7 @@
 }
 
 .mini-container img {
-    width: 30px;
+    width: 20px;
     transition: 1s;
     filter: saturate(0);
 }
