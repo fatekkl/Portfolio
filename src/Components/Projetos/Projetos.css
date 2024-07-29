@@ -7,7 +7,6 @@
     background-image: url(/public/assets/background.png);
     background-size: cover no-repeat;
     background-position: center center;
-    height: 60rem;
     box-shadow: 
         inset 50px 50px 250px rgba(0, 0, 0, 0.6);
     border-top: var(--fonte-primaria-clara) solid 6px;
@@ -79,7 +78,7 @@
 @media (max-width: 1040px) and (min-width: 350px) {
 
     .container-section {
-        height: 60rem;
+        height: 90rem;
     }
 
     .container-projects {
@@ -88,6 +87,7 @@
         gap: 40px;
         margin-left: 0%;
         margin-right: 0rem;
+        padding: 50px
     };
 
     .container-techs img {
